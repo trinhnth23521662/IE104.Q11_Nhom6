@@ -1,6 +1,6 @@
 # IE104.Q11_Nhom6
 ## Giới thiệu 
-Chào mọi người, chúng mình là nhóm 6, lớp IT104.Q11. Đây là nơi mà chúng mình sẽ viết lên những ý tưởng và thực hiện việc xây dựng một trang web sau tất cả những gì mà chúng mình học được trong môn học này. Các bạn có thể ghé xem hành trình thực hiện website này cùng chúng mình nhé.
+Chào mọi người, chúng mình là nhóm 6, lớp IE104.Q11. Đây là nơi mà chúng mình sẽ viết lên những ý tưởng và thực hiện việc xây dựng một trang web sau tất cả những gì mà chúng mình học được trong môn học này. Các bạn có thể ghé xem hành trình thực hiện website này cùng chúng mình nhé.
 
 Website mà bọn mình sẽ thực hiện là: **Website wishlist thời trang sinh viên**
 
