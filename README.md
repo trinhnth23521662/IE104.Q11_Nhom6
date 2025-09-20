@@ -5,7 +5,7 @@ Chào mọi người, chúng mình là nhóm 6, lớp IT104.Q11. Đây là nơi 
 Website mà bọn mình sẽ thực hiện là: **Website wishlist thời trang sinh viên**
 
 ![](https://cf.creatrip.com/original/blog/11049/s6f7r45l4t82sm6twe803vmrwfhvulbo.jpg?d=1300x700&q=75&f=jpg)
-### I.Ý tưởng 
+### I. Ý tưởng 
 Trong thời đại công nghệ số, mua sắm trực tuyến đã trở thành xu hướng quen thuộc của sinh viên. Tuy nhiên, khi đứng trước hàng ngàn sản phẩm thời trang đa dạng về mẫu mã và giá cả, sinh viên thường gặp khó khăn trong việc lựa chọn, quản lý hoặc ghi nhớ những sản phẩm mình yêu thích.
 
 Xuất phát từ thực tế đó, nhóm chúng mình đã nảy ra ý tưởng xây dựng một website wishlist thời trang dành cho sinh viên. Ý tưởng này nhằm giải quyết các vấn đề:
