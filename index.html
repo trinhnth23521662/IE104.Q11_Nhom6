@@ -1,15 +1,160 @@
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Homepage Design for ViniStyle (Copy)</title>
-    </head>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViniStyle - Thời Trang Sinh Viên Việt Nam</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>ViniStyle</h1>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#home">Trang chủ</a>
+                    <a href="#trending">Xu hướng</a>
+                    <a href="#brands">Thương hiệu</a>
+                    <a href="#about">Về chúng tôi</a>
+                </nav>
+                <div class="nav-actions">
+                    <button class="btn-secondary">Đăng nhập</button>
+                    <button class="btn-primary">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="floating-element float-1"></div>
+                <div class="floating-element float-2"></div>
+                <div class="floating-element float-3"></div>
+                
+                <h1 class="hero-title">Khám phá phong cách thời trang<br>dành riêng cho sinh viên Việt</h1>
+                <p class="hero-description">Kết nối với cộng đồng thời trang sinh viên, khám phá xu hướng mới và tạo wishlist cá nhân độc đáo</p>
+                <div class="hero-actions">
+                    <button class="btn-cta">Khám phá ngay</button>
+                    <button class="btn-outline">Xem bộ sưu tập</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Danh mục thời trang</h2>
+            <div class="categories-grid">
+                <div class="category-card glass-card">
+                    <div class="category-icon">👔</div>
+                    <h3>Thời trang nam</h3>
+                    <p>Phong cách hiện đại cho nam sinh viên</p>
+                </div>
+                <div class="category-card glass-card">
+                    <div class="category-icon">👗</div>
+                    <h3>Thời trang nữ</h3>
+                    <p>Xu hướng thời trang nữ sinh trendy</p>
+                </div>
+                <div class="category-card glass-card">
+                    <div class="category-icon">👟</div>
+                    <h3>Giày dép</h3>
+                    <p>Bộ sưu tập giày phong cách</p>
+                </div>
+                <div class="category-card glass-card">
+                    <div class="category-icon">👜</div>
+                    <h3>Phụ kiện</h3>
+                    <p>Điểm nhấn hoàn hảo cho outfit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="brand-story-section">
+        <div class="container">
+            <div class="brand-story-content">
+                <div class="brand-story-text">
+                    <h2 class="section-title">Câu chuyện thương hiệu</h2>
+                    <p>ViniStyle ra đời từ niềm đam mê thời trang của sinh viên Việt Nam. Chúng tôi hiểu rằng mỗi bạn trẻ đều có một phong cách riêng, và chúng tôi ở đây để giúp bạn khám phá và thể hiện cá tính của mình.</p>
+                    <button class="btn-secondary">Tìm hiểu thêm</button>
+                </div>
+                <div class="brand-story-visual glass-card">
+                    <div class="brand-visual-placeholder">
+                        <span>🎨 Brand Visual</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Vietnamese Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">Thương hiệu Việt yêu thích</h2>
+            <div class="brands-grid">
+                <div class="brand-card glass-card">
+                    <div class="brand-logo">🏷️</div>
+                    <h3>Local Brand 1</h3>
+                    <p>Thời trang bền vững</p>
+                </div>
+                <div class="brand-card glass-card">
+                    <div class="brand-logo">🏷️</div>
+                    <h3>Local Brand 2</h3>
+                    <p>Streetwear Việt Nam</p>
+                </div>
+                <div class="brand-card glass-card">
+                    <div class="brand-logo">🏷️</div>
+                    <h3>Local Brand 3</h3>
+                    <p>Minimalist fashion</p>
+                </div>
+                <div class="brand-card glass-card">
+                    <div class="brand-logo">🏷️</div>
+                    <h3>Local Brand 4</h3>
+                    <p>Vintage inspired</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ViniStyle</h3>
+                    <p>Nền tảng thời trang dành cho sinh viên Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết</h4>
+                    <ul>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                        <li><a href="#privacy">Chính sách</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Cộng đồng</h4>
+                    <ul>
+                        <li><a href="#facebook">Facebook</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#tiktok">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ViniStyle. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
