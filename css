@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 }
 
-/* Glass Morphism */
+/* hiệu ứng glass */
 .glass-header,
 .glass-card,
 .glass-footer {
@@ -59,8 +59,10 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover,
+.nav-menu a:focus {
     color: #ff4b2b;
+    outline: none;
 }
 
 /* hero section */
@@ -154,4 +156,100 @@ body {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
 }
+
+/* categories section */
+.categories-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.category-card {
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.category-circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.category-circle:hover {
+    transform: scale(1.08);
+}
+
+.category-circle .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+}
+
+.category-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+}
+
+.category-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+.category-content p { font-size: 14px; font-weight: 500; }
+
+/* brand section */
+.brand-story-section {
+    padding: 60px 0;
+}
+
+.brand-story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.brand-story-text p {
+    margin: 20px 0;
+    color: #444;
+}
+
+.brand-story-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+
 
