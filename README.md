@@ -13,4 +13,4 @@ Xuất phát từ thực tế đó, nhóm chúng mình đã nảy ra ý tưởng
 *-> Wishlist Thời Trang Sinh Viên không chỉ là một website – mà là nơi để sinh viên tự do thể hiện gu thời trang cá nhân và xây dựng phong cách sống hiện đại*
 
 ***Mục tiêu - phương châm: Wishlist thời trang sinh viên – Nơi bắt đầu phong cách, nơi lưu giữ cá tính!***
-
+### I. Quá trình thực hiện
