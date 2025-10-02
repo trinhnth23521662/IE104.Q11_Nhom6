@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - ViniStyle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>ViniStyle</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm brand, style, sản phẩm...">
+                <button>🔍</button>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Khám Phá</a>
+                <a href="brands.html">Brands</a>
+                <a href="about.html">Về Chúng Tôi</a>
+                <a href="contact.html" class="active">Liên Hệ</a>
+                <a href="#community">Cộng Đồng</a>
+            </nav>
+            <div class="user-avatar">👤</div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Kết nối cùng Vinistyle</h1>
+            <p>Mọi phản hồi của bạn đều là nguồn cảm hứng để Vinistyle hoàn thiện mỗi ngày. Hãy để chúng tôi đồng hành cùng bạn.</p>
+            <p class="contact-hours">Đội ngũ hỗ trợ của Vinistyle làm việc từ Thứ Hai đến Thứ Sáu, từ 9h sáng đến 5h chiều (trừ ngày lễ). Chúng tôi sẽ phản hồi trong vòng 2 ngày làm việc.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <h3>THÔNG TIN CHUNG</h3>
+                    <p>Bạn có thể gửi thắc mắc trực tiếp đến:</p>
+                    <a href="mailto:hello@vinistyle.vn" class="contact-email">hello@vinistyle.vn</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>HỢP TÁC BRANDS</h3>
+                    <p>Bạn là thương hiệu local?</p>
+                    <a href="mailto:brands@vinistyle.vn" class="contact-email">brands@vinistyle.vn</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>MARKETING / BÁO CHÍ</h3>
+                    <p>Liên hệ PR và truyền thông</p>
+                    <a href="mailto:press@vinistyle.vn" class="contact-email">press@vinistyle.vn</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>TUYỂN DỤNG</h3>
+                    <p>Tham gia đội ngũ của chúng tôi</p>
+                    <a href="mailto:careers@vinistyle.vn" class="contact-email">careers@vinistyle.vn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container-form">
+            <form class="contact-form">
+                <p class="required-note">* biểu thị trường bắt buộc</p>
+
+                <div class="form-group">
+                    <input type="text" id="fullname" placeholder="Họ và Tên*" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email*" required>
+                </div>
+
+                <div class="form-group">
+                    <select id="reason" required>
+                        <option value="">Lý Do Liên Hệ*</option>
+                        <option value="general">Câu hỏi chung</option>
+                        <option value="brands">Hợp tác brands</option>
+                        <option value="feedback">Phản hồi</option>
+                        <option value="technical">Vấn đề kỹ thuật</option>
+                        <option value="other">Khác</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="topic" placeholder="Chủ Đề*" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" placeholder="Nội dung chi tiết*" rows="8" required></textarea>
+                </div>
+
+                <div class="form-group file-upload">
+                    <label class="file-upload-label">
+                        <input type="file" id="attachment" multiple accept="image/*,.pdf,.doc,.docx">
+                        <span class="file-upload-text">📎 Kéo thả hoặc chọn file tại đây</span>
+                        <span class="file-upload-button">Tải Lên</span>
+                    </label>
+                    <p class="file-note">(Tùy chọn: Tối đa 10 file, tổng dung lượng dưới 50MB)</p>
+                </div>
+
+                <button type="submit" class="submit-btn">GỬI</button>
+
+                <p class="form-disclaimer">Trang web này được bảo vệ bởi hCaptcha và áp dụng <a href="#privacy">Chính sách bảo mật</a> và <a href="#terms">Điều khoản dịch vụ</a> của hCaptcha.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>vinistyle</h2>
+            </div>
+            
+            <div class="footer-main">
+                <div class="footer-newsletter">
+                    <h3>Tham gia cùng chúng tôi trên hành trình khám phá thời trang.</h3>
+                    <p>Cập nhật xu hướng, mẹo phối đồ & nội dung độc quyền từ ViniStyle.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Địa chỉ Email" required>
+                        <button type="submit">ĐĂNG KÝ</button>
+                    </form>
+                    <p class="privacy-note">Bằng việc đăng ký, bạn đồng ý với <a href="#privacy">Chính sách bảo mật</a> của chúng tôi.*</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="index.html">Khám Phá</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="about.html">Về Chúng Tôi</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                        <li><a href="#community">Cộng đồng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#tiktok">TikTok</a></li>
+                        <li><a href="#facebook">Facebook</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#privacy">Chính sách</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; vinistyle 2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
