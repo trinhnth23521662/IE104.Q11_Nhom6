@@ -623,6 +623,7 @@ body {
 }
 
 /* ABOUT US */
+
 * {
     margin: 0;
     padding: 0;
@@ -1310,6 +1311,7 @@ body {
 }
 
 /* BRANDS */
+
 * {
     margin: 0;
     padding: 0;
@@ -2256,6 +2258,7 @@ body {
 }
 
 /* LEVENTS */
+
 * {
     margin: 0;
     padding: 0;
@@ -3899,7 +3902,9 @@ body {
     }
 }
 
-/* CONTACTS */
+
+
+/* CONTACT */
 
 * {
     margin: 0;
@@ -4435,6 +4440,3 @@ body {
         flex-direction: column;
     }
 }
-
-
-
