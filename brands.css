@@ -336,35 +336,37 @@ body {
 /* Brands Grid Section */
 .brands-grid-section {
     padding: 60px 0;
-    background: #F3F4EF;
+    background: #FFFFFF;
 }
 
 .brands-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 30px;
     margin-bottom: 50px;
 }
 
-/* Brand Card */
+/* Brand Card - Updated to match Lush style */
 .brand-card {
-    background: #FFFFFF;
-    border-radius: 20px;
+    background: #F8F8F8;
+    border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(103, 100, 94, 0.08);
+    box-shadow: none;
+    border: 1px solid #E5E5E5;
 }
 
 .brand-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(103, 100, 94, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .brand-cover {
     width: 100%;
-    height: 250px;
+    height: 280px;
     position: relative;
     overflow: hidden;
+    background: #E8E8E8;
 }
 
 .brand-cover img {
@@ -380,38 +382,12 @@ body {
 
 .brand-logo-overlay {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 60px;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.95);
+    top: 12px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: #391C1C;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Brand Info */
-.brand-info {
-    padding: 25px;
-}
-
-.brand-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-}
-
-.brand-logo-small {
-    width: 40px;
-    height: 40px;
-    background: #F1F0EC;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -419,120 +395,153 @@ body {
     font-weight: 700;
     font-size: 0.75rem;
     color: #391C1C;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Brand Info */
+.brand-info {
+    padding: 20px;
+    background: #FFFFFF;
+}
+
+.brand-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.brand-logo-small {
+    width: 36px;
+    height: 36px;
+    background: #F1F0EC;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #391C1C;
 }
 
 .brand-header h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #391C1C;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
     margin: 0;
+    letter-spacing: -0.3px;
 }
 
 .brand-tagline {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #67645E;
-    margin-bottom: 15px;
-    line-height: 1.5;
+    margin-bottom: 12px;
+    line-height: 1.4;
 }
 
 /* Brand Tags */
 .brand-tags {
     display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
+    gap: 6px;
+    margin-bottom: 15px;
     flex-wrap: wrap;
 }
 
 .tag-pill {
-    padding: 5px 12px;
+    padding: 4px 10px;
     background: #F1F0EC;
-    border-radius: 15px;
-    font-size: 0.75rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
     font-weight: 600;
     color: #67645E;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 
 /* Social Proof */
 .social-proof {
-    margin-bottom: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #E5E4DF;
+    margin-bottom: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #EEEEEE;
 }
 
 .follower-avatars {
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .avatar {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     background: #D6CCC2;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin-right: -8px;
     border: 2px solid #FFFFFF;
 }
 
 .social-proof p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #67645E;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .follower-count {
     font-weight: 600;
-    color: #391C1C;
+    color: #000000;
 }
 
 /* Brand Actions */
 .brand-actions {
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .btn-follow {
     flex: 1;
-    padding: 12px 20px;
-    background: #391C1C;
+    padding: 11px 20px;
+    background: #000000;
     color: #FFFFFF;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 
 .btn-follow:hover {
-    background: #67645E;
-    transform: translateY(-2px);
+    background: #333333;
+    transform: translateY(-1px);
 }
 
 .btn-visit {
     flex: 1;
-    padding: 12px 20px;
+    padding: 11px 20px;
     background: transparent;
-    color: #67645E;
-    border: 2px solid #D6CCC2;
-    border-radius: 10px;
+    color: #000000;
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-decoration: none;
     text-align: center;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 
 .btn-visit:hover {
-    background: #F1F0EC;
-    border-color: #391C1C;
-    color: #391C1C;
+    background: #F8F8F8;
+    border-color: #000000;
 }
 
 /* Text Sections */
@@ -631,86 +640,6 @@ body {
     font-weight: 700;
 }
 
-/* Text Sections */
-.text-section-simple {
-    padding: 120px 20px;
-    background: #FFFFFF;
-    text-align: center;
-}
-
-.text-section-title {
-    font-size: 3.5rem;
-    font-weight: 400;
-    color: #391C1C;
-    max-width: 1100px;
-    margin: 0 auto;
-    line-height: 1.3;
-    letter-spacing: -1.5px;
-}
-
-/* Featured CTA Section */
-.featured-cta-section {
-    padding: 120px 20px;
-    background: #F1F0EC;
-}
-
-.cta-content-split {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.cta-text-side h2 {
-    font-size: 3rem;
-    font-weight: 400;
-    color: #391C1C;
-    margin-bottom: 25px;
-    letter-spacing: -1px;
-    line-height: 1.2;
-}
-
-.cta-text-side p {
-    font-size: 1.1rem;
-    color: #67645E;
-    line-height: 1.8;
-    margin-bottom: 35px;
-}
-
-.cta-button-large {
-    display: inline-block;
-    padding: 16px 45px;
-    background: #391C1C;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-.cta-button-large:hover {
-    background: #67645E;
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(57, 28, 28, 0.3);
-}
-
-.cta-image-side {
-    width: 100%;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 60px rgba(103, 100, 94, 0.2);
-}
-
-.cta-image-side img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /* Text Section Centered */
 .text-section-centered {
     padding: 120px 20px;
@@ -753,40 +682,6 @@ body {
     z-index: 1;         
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .text-section-title {
-        font-size: 2.5rem;
-    }
-    
-    .cta-content-split {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-    
-    .cta-text-side h2 {
-        font-size: 2.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .text-section-title {
-        font-size: 2rem;
-        letter-spacing: -0.5px;
-    }
-    
-    .text-section-centered h2 {
-        font-size: 2rem;
-    }
-    
-    .cta-text-side h2 {
-        font-size: 1.8rem;
-    }
-    
-    .cta-image-side {
-        height: 350px;
-    }
-}
 /* Load More Button */
 .load-more-container {
     text-align: center;
@@ -810,23 +705,6 @@ body {
     color: #FFFFFF;
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(57, 28, 28, 0.2);
-}
-
-/* Trust Banner */
-.trust-banner {
-    background: #391C1C;
-    padding: 40px 0;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.trust-banner p {
-    font-size: 1.1rem;
-    margin: 0;
-}
-
-.trust-banner strong {
-    font-weight: 700;
 }
 
 /* Footer */
@@ -970,7 +848,20 @@ body {
 @media (max-width: 1024px) {
     .brands-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 25px;
+    }
+
+    .text-section-title {
+        font-size: 2.5rem;
+    }
+    
+    .cta-content-split {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .cta-text-side h2 {
+        font-size: 2.2rem;
     }
 
     .footer-main {
@@ -1012,13 +903,30 @@ body {
 
     .brands-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 20px;
     }
 
     .filter-content {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+    }
+
+    .text-section-title {
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+    }
+    
+    .text-section-centered h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-text-side h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-image-side {
+        height: 350px;
     }
 
     .footer-brand h2 {
