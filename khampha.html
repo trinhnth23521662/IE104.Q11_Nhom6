@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KhamPha</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
     <!-- Header -->
@@ -14,12 +15,12 @@
                 <h1>ViniStyle</h1>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Tìm kiếm brand, style, sản phẩm...">
+                <input type="text" placeholder="Tìm kiếm style, sản phẩm...">
                 <button>🔍</button>
             </div>
             <nav class="nav-menu">
-                <a href="index.html">Khám Phá</a>
-                <a href="brands.html" class="active">Brands</a>
+                <a href="khampha.html" class="active">Khám Phá</a>
+                <a href="#brands">Brands</a>
                 <a href="#wishlist">Wishlist</a>
                 <a href="#community">Cộng Đồng</a>
             </nav>
@@ -29,79 +30,31 @@
   
 </header>
 <main>
-  <section class="trend-section">
-    <div class="section-header">
-      <h2>Xu hướng mới</h2>
-      <p>Khám phá những item thời trang mới nhất đang được giới trẻ yêu thích.</p>
+
+<!-- Hero Section -->
+<section class="hero-section-kp">
+    <div class="hero-background-kp">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=300" alt="">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300" alt="">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=300" alt="">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300" alt="">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=300" alt="">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=300" alt="">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=300" alt="">
+        <img class="bg-image" src="https://images.unsplash.com/photo-1467043237213-65f2da53396f?w=300" alt="">
     </div>
-    <div class="trend-items">
-      <div class="trend-card">
-        <img src="IMG/1_2.jpg" alt="Trend 1">
-        <div class="info">
-          <h3>Áo khoác Denim</h3>
-          <p>Phong cách streetwear cá tính.</p>
-        </div>
-      </div>
 
-      <div class="trend-card">
-        <img src="IMG/2_2.jpg" alt="Trend 2">
-        <div class="info">
-          <h3>Chân váy chữ A</h3>
-          <p>Thanh lịch và nữ tính.</p>
+    <div class="hero-content-box-kp">
+        <div class="content-overlay-kp">
+            <h1 class="hero-title-kp">Khám phá các xu hướng thời trang mới</h1>
+            <p class="hero-description-kp">Nơi bạn tìm thấy những item độc đáo và chất lượng</p>
+            <a class="hero-cta-kp" href="#trend" >Khám phá ngay</a>
         </div>
-      </div>
-
-      <div class="trend-card">
-        <img src="IMG/3_2.jpg" alt="Trend 3">
-        <div class="info">
-          <h3>Giày Sneaker</h3>
-          <p>Thoải mái và năng động.</p>
-        </div>
-      </div>
-
-      <div class="trend-card">
-        <img src="IMG/4_2.jpg" alt="Trend 4">
-        <div class="info">
-          <h3>Túi Tote</h3>
-          <p>Phụ kiện tiện dụng và đơn giản.</p>
-        </div>
-      </div>
-
-      <div class="trend-card">
-        <img src="IMG/5_2.jpg" alt="Trend 4">
-        <div class="info">
-          <h3>Nón Beret</h3>
-          <p>Nghệ sĩ, phong cách và cổ điển.</p>
-        </div>
-      </div>
-
-      <div class="trend-card">
-        <img src="IMG/6_2.jpg" alt="Trend 4">
-        <div class="info">
-          <h3>Áo Corset</h3>
-          <p> Cá tính và quyến rũ.</p>
-        </div>
-      </div>
-
-      <div class="trend-card">
-        <img src="IMG/7_2.jpg" alt="Trend 4">
-        <div class="info">
-          <h3>Layered tee</h3>
-          <p>Trẻ trung và sáng tạo.</p>
-        </div>
-      </div>
-
-      <div class="trend-card">
-        <img src="IMG/8_2.jpg" alt="Trend 4">
-        <div class="info">
-          <h3>Chân váy dài</h3>
-          <p>Nữ tính,mềm mại và kín đáo.</p>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <section class="trend-section">
+  
+  <section class="trend-section"  id="trend">
       <div class="section-header">
         <h2>Phong cách mới</h2>
         <p>Khám phá phong cách và các thiết kế mới</p>
@@ -109,18 +62,18 @@
 
       <div class="gallery">
         <div class="card">
-          <img src="IMG/1.jpg" alt="Phong cách tối giản">
-          <div class="meta">
-            <h3>Tối giản hiện đại</h3>
-            <p>Đơn giản nhưng ấn tượng, chú trọng sự gọn gàng và tinh tế.</p>
-          </div>
-        </div>
-
-        <div class="card">
           <img src="IMG/3.jpg" alt="Retro cổ điển">
           <div class="meta">
             <h3>Retro cổ điển</h3>
             <p>Cổ điển pha chút hiện đại, tái hiện lại tinh thần thời trang thập niên 70–90.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="IMG/1.jpg" alt="Phong cách tối giản">
+          <div class="meta">
+            <h3>Tối giản hiện đại</h3>
+            <p>Đơn giản nhưng ấn tượng, chú trọng sự gọn gàng và tinh tế.</p>
           </div>
         </div>
 
@@ -160,7 +113,7 @@
     
 
        <div class="card">
-          <img src="IMG/7.jpg" alt=" Phopng cách Smart Casual">
+          <img src="IMG/7.jpg" alt=" Phong cách Smart Casual">
           <div class="meta">
             <h3>Smart Casual thanh lịch</h3>
             <p>Tinh tế, sang trọng, tôn lên sự tự tin và khí chất riêng.</p>
@@ -177,6 +130,78 @@
         </div>
       </div>
     </section>
+
+    <section class="trend-section">
+    <div class="section-header">
+      <h2>Xu hướng mới</h2>
+      <p>Khám phá những item thời trang mới nhất đang được giới trẻ yêu thích.</p>
+    </div>
+    <div class="trend-items">
+      <div class="trend-card">
+        <img src="IMG/1_2.webp" alt="Áo khoác Denim">
+        <div class="info">
+          <h3>Áo khoác Denim</h3>
+          <p>Phong cách streetwear cá tính.</p>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <img src="IMG/2_2.jpg" alt="Chân váy chữ A">
+        <div class="info">
+          <h3>Chân váy chữ A</h3>
+          <p>Thanh lịch và nữ tính.</p>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <img src="IMG/3_2.jpg" alt="Giày sneaker">
+        <div class="info">
+          <h3>Giày sneaker</h3>
+          <p>Thoải mái và năng động.</p>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <img src="IMG/4_2.jpg" alt="Túi tote">
+        <div class="info">
+          <h3>Túi tote</h3>
+          <p>Phụ kiện tiện dụng và đơn giản.</p>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <img src="IMG/5_2.jpeg" alt="Nón beret">
+        <div class="info">
+          <h3>Nón beret</h3>
+          <p>Nghệ sĩ, phong cách và cổ điển.</p>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <img src="IMG/6_2.jpg" alt="Áo corset">
+        <div class="info">
+          <h3>Áo corset</h3>
+          <p> Cá tính và quyến rũ.</p>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <img src="IMG/7_2.jpg" alt="Layered tee">
+        <div class="info">
+          <h3>Layered tee</h3>
+          <p>Trẻ trung và sáng tạo.</p>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <img src="IMG/8_2.jpg" alt="Chân váy dài">
+        <div class="info">
+          <h3>Chân váy dài</h3>
+          <p>Nữ tính,mềm mại và kín đáo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 <section class="trend-section">
@@ -218,7 +243,7 @@
     </div>
 
      <div class="trend-card">
-      <img src="IMG/5_3.jpg" alt="Áo Polo ">
+      <img src="IMG/5_3.webp" alt="Áo Polo ">
       <div class="info">
         <h3> Áo polo</h3>
         <p>sành điệu, thanh lịch, dễ phối đồ street style hay smart-casual.</p>
@@ -290,7 +315,7 @@
     </div>
 
     <div class="trend-card">
-      <img src="IMG/5_4.jpg" alt="Quần ống loe">
+      <img src="IMG/5_4.webp" alt="Quần ống loe">
       <div class="info">
         <h3>Quần ống loe</h3>
         <p>Biểu tượng retro, tôn dáng, mix cùng áo crop hay blazer đều sang chảnh và trendy.</p>
@@ -306,7 +331,7 @@
     </div>
 
     <div class="trend-card">
-      <img src="IMG/7_4.jpg" alt="Jumpsuit">
+      <img src="IMG/7_4.webp" alt="Jumpsuit">
       <div class="info">
         <h3>Jumpsuit</h3>
         <p>Item “all-in-one” tiện lợi, vừa năng động vừa thời thượng, tạo outfit liền mạch mà vẫn nổi bật.</p>
@@ -426,7 +451,7 @@
     </div>
 
     <div class="trend-card">
-      <img src="IMG/5_6.jpg" alt="Thời trang mùa đông">
+      <img src="IMG/5_6.webp" alt="Thời trang mùa đông">
       <div class="info">
         <h3>Mùa Đông</h3>
         <p>Ấm áp, sang trọng với áo len, áo khoác dày và boots da.</p>
@@ -458,7 +483,7 @@
     </div>
 
      <div class="trend-card">
-      <img src="IMG/8_6.jpg" alt="Thời trang mùa du lịch">
+      <img src="IMG/8_6.webp" alt="Thời trang mùa du lịch">
       <div class="info">
         <h3>Mùa Du lịch</h3>
         <p>Nhẹ nhàng, chất liệu thoáng mát, tôn lên vẻ đẹp tự nhiên và phong cách riêng.</p>
