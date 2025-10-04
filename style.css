@@ -4537,7 +4537,7 @@ html {
 }
 
 .hero-cta-kp:hover {
-  background: #f7f7f7; 
+  background: #f7f6f4; 
   transform: translateY(-2px);
 }
 
@@ -4770,7 +4770,7 @@ html {
 }
 
 .hero-cta-kp:hover {
-  background-color: #f4f3ef;
+  background-color: #fcfbf9;
   color: #000;
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
