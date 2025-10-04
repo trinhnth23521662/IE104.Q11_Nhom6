@@ -4490,7 +4490,7 @@ html {
   border-radius: 4px;
 }
 
-/* Khung trắng nổi ở giữa */
+
 .hero-content-box-kp {
   position: relative;
   z-index: 2;
@@ -4502,7 +4502,7 @@ html {
   max-width: 380px; 
 }
 
-/* Nội dung chữ */
+
 .hero-title-kp {
   font-size: 1.5rem;
   font-weight: 700;
@@ -4537,7 +4537,7 @@ html {
 }
 
 .hero-cta-kp:hover {
-  background: #555; /* xám sáng khi hover */
+  background: #f7f7f7; 
   transform: translateY(-2px);
 }
 
@@ -4545,7 +4545,7 @@ html {
 /* ===== Section Xu Hướng ===== */
 
 .section-header {
-  background-color: #f5eeee;      /* nền xám nhạt */
+  background-color: #fbfbfb;      /* nền xám nhạt */
   padding: 20px 25px;
   border-radius: 20px;            /* bo tròn cả khối */
   box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* đổ bóng nhẹ */
@@ -4703,3 +4703,75 @@ html {
   color: #67645e;
 }
 
+/* Trend section2 */
+/* ===== Phần Phong cách mới ===== */
+
+.trend-section2 {
+  display: flex;                  
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffdf7;      
+  padding: 60px 50px;            
+  border-radius: 20px;            
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+  margin: 60px auto;
+  max-width: 1200px;              
+  gap: 30px;
+}
+
+.section-header2 {
+  flex: 1;
+  text-align: left;               
+}
+
+.section-header2 h2 {
+  font-size: 36px;            
+  margin-bottom: 12px;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-header2 p {
+  font-size: 16px;               
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Ảnh bên phải to hơn */
+.trend-section2 img {
+  flex: 1;              
+  width: 100%;          
+  max-width: 400px;    
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.button-group {
+  display: flex;
+  gap: 20px;               
+  justify-content: flex-start; 
+  flex-wrap: nowrap;       
+  margin-top: 20px;
+}
+
+.hero-cta-kp {
+  padding: 12px 28px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;      
+}
+
+.hero-cta-kp:hover {
+  background-color: #f4f3ef;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
