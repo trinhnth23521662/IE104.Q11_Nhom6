@@ -1,4 +1,4 @@
-/* index.html */
+.bg-image:nth-child(odd) {/* index.html */
 * {
     margin: 0;
     padding: 0;
@@ -1640,7 +1640,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    opacity: 0.4;
+    opacity: 1;
     transform: rotate(-2deg);
     transition: all 0.3s ease;
 }
@@ -1650,7 +1650,7 @@ body {
 }
 
 .bg-image:hover {
-    opacity: 0.6;
+    opacity: 0.9;
     transform: scale(1.05) rotate(0deg);
 }
 
