@@ -2089,8 +2089,6 @@ body {
 
 .cta-button-large:hover {
     background: #67645E;
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(57, 28, 28, 0.3);
 }
 
 .cta-image-side {
