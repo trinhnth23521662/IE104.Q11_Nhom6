@@ -4710,7 +4710,7 @@ html {
 }
 
 
-/* ===== Section Xu Hướng ===== */
+/* Section Xu Hướng  */
 
 .section-header {
   background-color: #fbfbfb;     
@@ -4757,7 +4757,7 @@ html {
   color: #67645e;
 }
 
-/* Gallery Grid */
+/* Section */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -4800,7 +4800,7 @@ html {
   color: #67645e;
 }
 
-/* Responsive */
+/*Section*/
 @media (max-width: 600px) {
   .section-header h2 {
     font-size: 1.5rem;
@@ -4872,7 +4872,7 @@ html {
 }
 
 /* Trend section2 */
-/* ===== Phần Phong cách mới ===== */
+/* Phần Phong cách mới  */
 
 .trend-section2 {
   display: flex;                  
@@ -4906,7 +4906,7 @@ html {
   line-height: 1.5;
 }
 
-/* Ảnh bên phải to hơn */
+
 .trend-section2 img {
   flex: 1;              
   width: 100%;          
