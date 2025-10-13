@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - ViniStyle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dangnhap.css">
+</head>
+<body>
+
+        <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                <img src="vinistyle_logo.png" alt="ViniStyle Logo">
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm brand, style, sản phẩm...">
+                <button>⌕</button>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Khám Phá</a>
+                <a href="brands.html" class="active">Thương Hiệu</a>
+                <a href="about.html">Về chúng tôi</a>
+                <a href="contact.html">Liên Hệ</a>
+            </nav>
+            <div class="user-avatar">
+                <img src="https://avatar.iran.liara.run/public/64" alt="User Avatar">
+            </div>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-image">
+            <img src="dangnhap.png" alt="Phong cách thời trang từ các local brands">
+            <div class="image-text">
+                <h2>Đã đến lúc đầu tư cho PHONG CÁCH của bạn.</h2>
+            </div>
+        </div>
+        
+        <div class="auth-form">
+            <div class="form-content">
+                <h1>Đăng Nhập</h1>
+                
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">ĐĂNG NHẬP</button>
+                    
+                    <div class="form-links">
+                        <a href="#" class="link-secondary">Quên mật khẩu?</a>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <p>Bạn chưa có tài khoản? <a href="signup.html">Đăng ký ngay!</a></p>
+                    </div>
+                </form>
+                
+                <div id="errorMessage" class="error-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fixed credentials for demo
+        const DEMO_EMAIL = "demo@vinistyle.com";
+        const DEMO_PASSWORD = "vinistyle2024";
+
+        function handleLogin(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+            
+            if (email === DEMO_EMAIL && password === DEMO_PASSWORD) {
+                // Store login status
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('userEmail', email);
+                
+                // Redirect to homepage
+                window.location.href = 'index.html';
+            } else {
+                errorMessage.textContent = 'Email hoặc mật khẩu không đúng. Demo: demo@vinistyle.com / vinistyle2024';
+                errorMessage.style.display = 'block';
+            }
+        }
+    </script>
+
+            <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>vinistyle</h2>
+            </div>
+            
+            <div class="footer-main">
+                <div class="footer-newsletter">
+                    <h3>Tham gia cùng chúng tôi trên hành trình khám phá thời trang.</h3>
+                    <p>Cập nhật xu hướng, mẹo phối đồ & nội dung độc quyền từ ViniStyle.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Địa chỉ Email" required>
+                        <button type="submit">ĐĂNG KÝ</button>
+                    </form>
+                    <p class="privacy-note">Bằng việc đăng ký, bạn đồng ý với <a href="#privacy">Chính sách bảo mật</a> của chúng tôi.*</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Khám phá</h4>
+                    <ul>
+                        <li><a href="brands.html">Các thương hiệu</a></li>
+                        <li><a href="#outfits">Gợi ý outfit</a></li>
+                        <li><a href="khampha.html">Combo phối đồ</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Theo dõi</h4>
+                    <ul>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#tiktok">TikTok</a></li>
+                        <li><a href="#facebook">Facebook</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Ủng hộ</h4>
+                    <ul>
+                        <li><a href="#contact">Liên hệ</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#privacy">Chính sách</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ViniStyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
