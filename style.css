@@ -4781,6 +4781,21 @@ html {
   color: #67645e;
 }
 
+.meta {
+  padding: 15px;
+}
+
+.meta h3 {
+  font-size: 1.05rem;
+  color: #391c1c;
+  margin-bottom: 6px;
+}
+
+.meta p {
+  font-size: 0.9rem;
+  color: #67645e;
+}
+
 /* Trend section2 */
 /* Phần Phong cách mới  */
 
