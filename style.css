@@ -4874,24 +4874,6 @@ html {
   margin-top: 20px;
 }
 
-.hero-cta-kp {
-  padding: 12px 28px;
-  background-color: #000;
-  color: #fff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  white-space: nowrap;      
-}
-
-.hero-cta-kp:hover {
-  background-color: #fcfbf9;
-  color: #000;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
 /* Nút mũi tên */
 #Arrow {
   position: fixed;
