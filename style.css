@@ -4612,10 +4612,12 @@ html {
 /* Section Xu Hướng  */
 
 .section-header {
-  background-color: #fbfbfb;     
+   background-color: #fbfbfb;     
   padding: 20px 25px;
   border-radius: 20px;            
   box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+  margin-bottom: 30px;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -4640,21 +4642,6 @@ html {
   margin: 50px auto;
 }
 
-.section-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.section-header h2 {
-  font-size: 1.8rem;
-  color: #391c1c;
-  margin-bottom: 10px;
-}
-
-.section-header p {
-  font-size: 1rem;
-  color: #67645e;
-}
 
 /* Section */
 .trend-section {
