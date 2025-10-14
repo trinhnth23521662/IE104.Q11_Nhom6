@@ -1690,24 +1690,6 @@ body {
     margin-bottom: 30px;
 }
 
-.hero-cta {
-    display: inline-block;
-    padding: 14px 40px;
-    background: #391C1C;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-}
-
-.hero-cta:hover {
-    background: #67645E;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(57, 28, 28, 0.3);
-}
-
 /* Category Tags */
 .category-tags {
     background: #F1F0EC;
