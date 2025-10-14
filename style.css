@@ -259,10 +259,9 @@ body {
 }
 
 .hero-cta:hover {
-  background: #fcfbf9;
-  color: #000;
+  background: #ffffff;
+  color: #391c1c;
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .hero-product-display {
