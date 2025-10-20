@@ -2528,7 +2528,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://thanhnien.mediacdn.vn/uploaded/dieutrang.qc/2021_08_27/levent/levents-1_VBVN.jpg?width=500');
+    background-image: url('./images/levents_header.png');
     background-size: cover;
     background-position: center;
     opacity: 0.5;
@@ -3210,7 +3210,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://scontent.fsgn1-1.fna.fbcdn.net/v/t39.30808-6/484350091_633587826060661_7108390265713657017_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UzvbKHELgzMQ7kNvwGGoeth&_nc_oc=AdlT-5YVC6rOlj6zG-_zEC79qd0PoUo_1VIXmUquAzJQnP2t4sPw1vR7g0Pma1nX26k&_nc_zt=23&_nc_ht=scontent.fsgn1-1.fna&_nc_gid=sc6CfW7U-loJmQH7MeHwvg&oh=00_AfdJfyetiJzA5SoTHK4Dun-V1spL59Z02Ba0VllgFaH8rg&oe=68E55E0D');
+    background-image: url('./images/dc_header.png');
     background-size: cover;
     background-position: center;
     opacity: 0.5;
