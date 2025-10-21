@@ -1966,7 +1966,8 @@ body {
     gap: 8px;
 }
 
-.btn-follow {
+.btn-follow,
+a.btn-follow {
     flex: 1;
     padding: 11px 20px;
     background: #000000;
@@ -1979,11 +1980,17 @@ body {
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.3px;
+    text-decoration: none;  
+    display: flex;          
+    align-items: center;   
+    justify-content: center;
+    text-align: center;    
 }
 
-.btn-follow:hover {
+a.btn-follow:hover {
     background: #333333;
     transform: translateY(-1px);
+    text-decoration: none; 
 }
 
 .btn-visit {
