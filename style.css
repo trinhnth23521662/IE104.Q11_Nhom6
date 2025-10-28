@@ -5281,11 +5281,12 @@ html {
 }
 
 .footer-brand h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #391c1c;
-  letter-spacing: -1px;
-  margin: 0;
+    font-size: 8rem;
+    font-weight: 700;
+    color: #67645E;
+    letter-spacing: -4px;
+    margin-bottom: 0;
+    line-height: 0.9;
 }
 
 .footer-links {
