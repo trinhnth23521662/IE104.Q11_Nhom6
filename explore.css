@@ -150,32 +150,7 @@ body {
     cursor: pointer;
 }
 
-/* Breadcrumb */
-.breadcrumb {
-    background: #F1F0EC;
-    padding: 15px 0;
-    font-size: 0.85rem;
-    color: #67645E;
-}
 
-.breadcrumb a {
-    color: #67645E;
-    text-decoration: none;
-}
-
-.breadcrumb a:hover {
-    color: #391C1C;
-}
-
-.language-selector {
-  background: #ffffff;
-  padding: 10px 18px;
-  border-radius: 25px;
-  box-shadow: 0 2px 8px rgba(103, 100, 94, 0.08);
-  color: #67645e;
-  font-weight: 500;
-  font-size: 0.9rem;
-}
 
 /* hero section */
 .hero-section {
@@ -813,4 +788,5 @@ html {
         flex-direction: column;
     }
 }
+
 
