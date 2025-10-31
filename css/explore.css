@@ -151,7 +151,6 @@ body {
 }
 
 
-
 /* hero section */
 .hero-section {
     min-height: 500px;
@@ -384,7 +383,16 @@ html {
   color: #67645e;
 }
 
+a {
+  text-decoration: none;      /* Không gạch chân thẻ a */
+}
 
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;      /* Không gạch chân khi hover, focus, visited */
+
+}
 
 /* Trend section2 */
 /* Phần Phong cách mới  */
@@ -442,7 +450,7 @@ html {
 }
 .hero-cta-kp {
   padding: 12px 28px;
-  background-color: #000;
+  background-color: #391C1C;
   color: #fff;
   border-radius: 30px;
   text-decoration: none;
@@ -453,7 +461,7 @@ html {
 
 .hero-cta-kp:hover {
   background-color: #fcfbf9;
-  color: #000;
+  color: #0b0b0b;
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
@@ -482,7 +490,6 @@ html {
   background-color: #ddd;
   transform: scale(1.1);
 }
-
 
 /* CTA Section */
 .cta-section {
@@ -550,33 +557,6 @@ html {
   transform: translateY(-2px);
 }
 
-.social-share {
-  padding-top: 48px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.social-share > p {
-  font-size: 0.95rem;
-  opacity: 0.75;
-  margin-bottom: 16px;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-
-.social-links a {
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.social-links a:hover {
-  opacity: 1;
-}
 
 
 /* Footer */
