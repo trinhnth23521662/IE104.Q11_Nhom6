@@ -392,7 +392,7 @@ h1 {
   color: #f9f7f6;
 }
 
-.cta-section > p {
+.cta-section  p {
   font-size: 1rem;
   margin-bottom: 30px;
   opacity: 0.9;
@@ -565,6 +565,7 @@ h1 {
     color: #67645E;
     font-size: 0.85rem;
 }
+
 
 
 
