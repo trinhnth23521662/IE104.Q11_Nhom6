@@ -396,9 +396,10 @@ h1 {
   margin-bottom: 30px;
   opacity: 0.9;
   line-height: 1.6;
-  max-width: 700px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  color: #f9f7f6;
 }
 
 .cta-buttons {
@@ -563,4 +564,5 @@ h1 {
     color: #67645E;
     font-size: 0.85rem;
 }
+
 
