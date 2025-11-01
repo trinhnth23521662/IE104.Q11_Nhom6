@@ -302,10 +302,11 @@ h1 {
 }
 
 .vintage-brands h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 400;
   color: #3E1E1E;
   margin-bottom: 20px;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
 }
 
 .brand-intro {
@@ -564,5 +565,6 @@ h1 {
     color: #67645E;
     font-size: 0.85rem;
 }
+
 
 
