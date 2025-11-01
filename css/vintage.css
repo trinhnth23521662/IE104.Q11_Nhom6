@@ -7,6 +7,7 @@
 html, body {
   overflow-x: hidden;
 }
+
 body {
     font-family: 'Inter', sans-serif;
     background: #F3F4EF;
@@ -238,7 +239,8 @@ h1 {
   max-width: 1200px;
   margin: 50px auto;
   padding: 0 20px;
-  color: black
+  color: #3E1E1E;
+  
 }
 
 .products {
@@ -425,7 +427,6 @@ h1 {
 }
 
 
-
 /* Footer */
 .footer {
     background: #F1F0EC;
@@ -561,7 +562,4 @@ h1 {
     border-top: 1px solid #D6CCC2;
     color: #67645E;
     font-size: 0.85rem;
-
 }
-
-
