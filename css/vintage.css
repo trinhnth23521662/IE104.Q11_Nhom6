@@ -28,7 +28,8 @@ body {
     -webkit-backdrop-filter: blur(20px);
     padding: 0;
     height: 80px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(214, 204, 194, 0.3);
@@ -564,6 +565,7 @@ h1 {
     color: #67645E;
     font-size: 0.85rem;
 }
+
 
 
 
