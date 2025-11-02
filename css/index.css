@@ -11,25 +11,17 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
 /* Header with Blur Effect */
 .main-header {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 0;
     height: 80px;
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(214, 204, 194, 0.3);
     display: flex;
-    align-items: center;
 }
 
 .header-container {
@@ -101,7 +93,6 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #D6CCC2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +141,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f3f4ef;
   overflow: hidden;
 }
 
@@ -238,7 +228,6 @@ body {
 }
 
 .product-showcase {
-  background: #f3f4ef;
   padding: 30px;
   border-radius: 20px;
   width: 150px;
@@ -339,7 +328,7 @@ body {
 .featured-image {
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: url("./images/local-brand.jpg") center/cover no-repeat;
+  background: url("./images/index/local-brand.jpg") center/cover no-repeat;
 }
 
 .featured-text {
@@ -736,3 +725,4 @@ body {
     padding: 40px 15px 20px;
   }
 }
+
