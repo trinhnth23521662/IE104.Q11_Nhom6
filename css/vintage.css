@@ -334,9 +334,8 @@ h1 {
   text-align: center;
   padding: 20px 0;
   font-size: 1.1rem;
-  font-weight: bolder;
   background-color: #f9f8f6;
-  color: #2C1616;
+  color: #3a3939;
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 3px 8px rgba(57, 28, 28, 0.1);
@@ -565,6 +564,7 @@ h1 {
     color: #67645E;
     font-size: 0.85rem;
 }
+
 
 
 
