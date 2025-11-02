@@ -328,7 +328,7 @@ body {
 .featured-image {
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: url("./images/index/local-brand.jpg") center/cover no-repeat;
+  background: url("../images/index/local-brand.jpg") center/cover no-repeat;
 }
 
 .featured-text {
@@ -725,4 +725,5 @@ body {
     padding: 40px 15px 20px;
   }
 }
+
 
