@@ -160,6 +160,7 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
+    margin-top: 100px;
 }
 
 .style-name-hero::before {
@@ -185,7 +186,16 @@ body {
     position: relative;
     z-index: 1;
 }
+@media (max-width: 1024px) {
+  .style-name-hero {
+    padding: 100px 20px;
+  }
 
+  .style-title {
+    font-size: 6rem; 
+    letter-spacing: -4px;
+  }
+}
 /* Style Intro */
 .style-intro {
     background: #FFFFFF;
@@ -643,6 +653,7 @@ h1 {
     padding: 40px 15px 20px;
   }
 }
+
 
 
 
