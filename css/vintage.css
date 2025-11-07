@@ -153,6 +153,47 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
 }
+
+/* Responsive*/
+@media (max-width: 1024px) {
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    height: auto;
+  }
+
+  .logo {
+    order: 1;
+    flex: 0 0 auto; 
+  
+  }
+
+  .logo img {
+    height: 120px;
+  }
+
+  .search-bar {
+    order: 1;
+    flex: 1;                 
+    max-width: 500px; 
+  }
+
+  .nav-menu {
+    order: 2;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;      
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .user-avatar {
+    order: 2;
+  }
+}
 /* Style Name Hero */
 .style-name-hero {
     background: #F1F0EC;
@@ -653,6 +694,7 @@ h1 {
     padding: 40px 15px 20px;
   }
 }
+
 
 
 
