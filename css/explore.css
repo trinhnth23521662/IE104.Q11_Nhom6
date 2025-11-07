@@ -201,6 +201,7 @@ body {
     justify-content: center;
     overflow: hidden;
     background: #F3F4EF;
+    margin-top: 100px;
 }
 
 .hero-background {
@@ -830,5 +831,6 @@ a:visited {
     padding: 40px 15px 20px;
   }
 }
+
 
 
