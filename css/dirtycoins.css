@@ -477,19 +477,6 @@ body {
     position: relative;
 }
 
-.brand-vision::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 200px;
-    background-image: url('https://images.unsplash.com/photo-1558769132-cb1aea1f1a8a?w=1200');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.15;
-}
-
 .vision-content {
     max-width: 1000px;
     margin: 0 auto;
