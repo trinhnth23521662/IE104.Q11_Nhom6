@@ -875,6 +875,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .btn-load-more:hover {
@@ -882,6 +883,7 @@ body {
     color: #FFFFFF;
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(57, 28, 28, 0.2);
+    text-decoration: none;
 }
 
 /* Footer */
