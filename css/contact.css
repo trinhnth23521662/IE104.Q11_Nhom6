@@ -486,6 +486,109 @@ body {
     text-decoration: underline;
 }
 
+/* Join CTA Section */
+.join-cta-section {
+    background: linear-gradient(135deg, #391C1C 0%, #67645E 100%);
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.join-cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.4;
+}
+
+.join-cta-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.join-cta-content {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.join-cta-content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.join-cta-content > p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.join-cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 18px 50px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-signin {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.cta-signin:hover {
+    background: #FFFFFF;
+    color: #391C1C;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+}
+
+.cta-signup {
+    background: #FFFFFF;
+    color: #391C1C;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-signup:hover {
+    background: #F1F0EC;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
+}
+
+.join-note {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-top: 25px;
+}
+
 /* Footer */
 .footer {
     background: #F1F0EC;
