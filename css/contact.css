@@ -137,132 +137,10 @@ body {
     color: #391C1C;
 }
 
-.user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #D6CCC2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background: #F1F0EC;
-    color: #67645E;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 .container-form {
     width: 90%;
     max-width: 700px;
     margin: 0 auto;
-}
-
-/* Header Styles */
-.main-header {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(214, 204, 194, 0.3);
-}
-
-.header-container {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-.logo h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #391C1C;
-    margin: 0;
-}
-
-.search-bar {
-    flex: 1;
-    max-width: 500px;
-    display: flex;
-    background: #F1F0EC;
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-.search-bar input {
-    flex: 1;
-    border: none;
-    background: transparent;
-    padding: 12px 20px;
-    font-size: 0.9rem;
-    outline: none;
-    color: #67645E;
-}
-
-.search-bar input::placeholder {
-    color: #999;
-}
-
-.search-bar button {
-    background: transparent;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1.2rem;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #67645E;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-}
-
-.nav-menu a:hover,
-.nav-menu a.active {
-    color: #391C1C;
-}
-
-.user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #D6CCC2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    cursor: pointer;
 }
 
 /* Contact Hero */
@@ -658,10 +536,12 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .newsletter-form button:hover {
     background: #67645E;
+    transform: translateY(-2px);
 }
 
 .privacy-note {
@@ -712,72 +592,66 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .brand-title {
-        font-size: 6rem;
-        letter-spacing: -3px;
+    .contact-hero h1 {
+        font-size: 2.5rem;
     }
 
-    .collection-layout,
-    .story-layout,
-    .proof-content {
+    .contact-info-grid {
         grid-template-columns: 1fr;
     }
 
-    .showcase-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .join-cta-content h2 {
+        font-size: 2.5rem;
     }
 
-    .showcase-item.large {
-        grid-column: span 2;
-        grid-row: span 1;
-    }
-
-    .showcase-item.large img {
-        min-height: 400px;
-    }
-
-    .special-grid {
-        grid-template-columns: 1fr;
+    .join-cta-content > p {
+        font-size: 1.1rem;
     }
 
     .footer-brand h2 {
         font-size: 6rem;
     }
+    
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    
+    .footer-newsletter {
+        grid-column: span 2;
+    }
 }
 
 @media (max-width: 768px) {
-    .brand-title {
-        font-size: 4rem;
-        letter-spacing: -2px;
-    }
-
-    .intro-content h2 {
+    .contact-hero h1 {
         font-size: 2rem;
     }
 
-    .collection-info h2 {
+    .contact-hero p {
+        font-size: 0.95rem;
+    }
+
+    .join-cta-section {
+        padding: 60px 20px;
+    }
+
+    .join-cta-content h2 {
         font-size: 2rem;
+        letter-spacing: -1px;
     }
 
-    .showcase-grid {
-        grid-template-columns: 1fr;
+    .join-cta-content > p {
+        font-size: 1rem;
     }
 
-    .showcase-item.large {
-        grid-column: span 1;
-    }
-
-    .proof-text h2 {
-        font-size: 2rem;
-    }
-
-    .proof-stats {
+    .join-cta-buttons {
         flex-direction: column;
-        gap: 25px;
+        gap: 15px;
     }
 
-    .cta-website h2 {
-        font-size: 2rem;
+    .cta-btn {
+        width: 100%;
+        padding: 16px 40px;
     }
 
     .footer-brand h2 {
@@ -787,6 +661,10 @@ body {
 
     .footer-main {
         grid-template-columns: 1fr;
+    }
+    
+    .footer-newsletter {
+        grid-column: span 1;
     }
 
     .newsletter-form {
