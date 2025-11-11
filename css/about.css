@@ -174,7 +174,7 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styles (Same as brands.css) */
+/* Header Styles */
 .main-header {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
@@ -615,7 +615,7 @@ body {
     box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
 }
 
-/* Footer Styles (Same as brands.css with centered brand) */
+/* Footer */
 .footer {
     background: #F1F0EC;
     padding: 80px 20px 40px;
@@ -828,6 +828,15 @@ body {
 @media (max-width: 768px) {
     .header-container {
         flex-wrap: wrap;
+    }
+    
+    .footer-connect-cta {
+    text-align: center;
+    padding-right: 0;
+    }
+
+    .connect-title {
+    font-size: 2rem;
     }
     
     .search-bar {
