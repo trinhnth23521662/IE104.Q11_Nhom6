@@ -811,7 +811,7 @@ a:visited {
 }
 
 .footer-bottom {
-    text-align: left;
+    text-align: center;
     padding-top: 30px;
     border-top: 1px solid #D6CCC2;
     color: #67645E;
@@ -872,6 +872,7 @@ a:visited {
     padding: 40px 15px 20px;
   }
 }
+
 
 
 
