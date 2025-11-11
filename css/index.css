@@ -49,9 +49,7 @@ body {
 }
 
 .logo img {
-    height: 200px;
-    width: auto;
-    display: block;
+    height: 80px;
     transition: opacity 0.3s ease;
 }
 
