@@ -364,102 +364,10 @@ body {
     text-decoration: underline;
 }
 
-/* Join CTA Section */
-.join-cta-section {
-    background: linear-gradient(135deg, #391C1C 0%, #67645E 100%);
-    padding: 100px 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.join-cta-container {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
-
-.join-cta-content {
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.join-cta-content h2 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    letter-spacing: -2px;
-    line-height: 1.1;
-}
-
-.join-cta-content > p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    opacity: 0.95;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.7;
-}
-
-.join-cta-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-}
-
-.cta-btn {
-    padding: 18px 50px;
-    font-size: 1.05rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-signin {
-    background: transparent;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-}
-
-.cta-signin:hover {
-    background: #FFFFFF;
-    color: #391C1C;
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
-}
-
-.cta-signup {
-    background: #FFFFFF;
-    color: #391C1C;
-    border: 2px solid #FFFFFF;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.cta-signup:hover {
-    background: #F1F0EC;
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
-}
-
-.join-note {
-    font-size: 0.9rem;
-    opacity: 0.85;
-    margin-top: 25px;
-}
-
 /* Footer */
 .footer {
     background: #F1F0EC;
-    padding: 80px 20px 40px;
+    padding: 0 20px 40px;
 }
 
 .footer-container {
@@ -467,6 +375,108 @@ body {
     margin: 0 auto;
 }
 
+/* Footer Account CTA */
+.footer-account-cta {
+    background: linear-gradient(135deg, #391C1C 0%, #5a4545 100%);
+    padding: 60px 50px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    box-shadow: 0 20px 60px rgba(57, 28, 28, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-account-cta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.footer-account-cta::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.account-cta-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.account-cta-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.account-cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    opacity: 0.95;
+}
+
+.account-cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.account-cta-content .join-note {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.account-btn {
+    padding: 16px 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.account-signin {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.account-signin:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.account-signup {
+    background: #FFFFFF;
+    color: #391C1C;
+    border: 2px solid #FFFFFF;
+}
+
+.account-signup:hover {
+    background: #F1F0EC;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Footer Brand */
 .footer-brand {
     text-align: center;
     margin-bottom: 60px;
@@ -589,12 +599,12 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .join-cta-content h2 {
-        font-size: 2.5rem;
+    .footer-account-cta {
+        padding: 50px 40px;
     }
 
-    .join-cta-content > p {
-        font-size: 1.1rem;
+    .account-cta-content h3 {
+        font-size: 2rem;
     }
 
     .footer-brand h2 {
@@ -620,27 +630,26 @@ body {
         font-size: 0.95rem;
     }
 
-    .join-cta-section {
-        padding: 60px 20px;
+    .footer-account-cta {
+        padding: 40px 30px;
+        border-radius: 15px;
     }
 
-    .join-cta-content h2 {
-        font-size: 2rem;
-        letter-spacing: -1px;
+    .account-cta-content h3 {
+        font-size: 1.8rem;
     }
 
-    .join-cta-content > p {
+    .account-cta-content p {
         font-size: 1rem;
     }
 
-    .join-cta-buttons {
+    .account-cta-buttons {
         flex-direction: column;
         gap: 15px;
     }
 
-    .cta-btn {
+    .account-btn {
         width: 100%;
-        padding: 16px 40px;
     }
 
     .footer-brand h2 {
