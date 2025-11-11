@@ -16,12 +16,14 @@ body {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    padding: 0;
     height: 80px;
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(214, 204, 194, 0.3);
     display: flex;
+    align-items: center;
 }
 
 .header-container {
@@ -31,8 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    height: 100%;
+    gap: 15px;
 }
 
 .logo h1 {
@@ -48,9 +49,7 @@ body {
 }
 
 .logo img {
-    height: 200px;
-    width: auto;
-    display: block;
+    height: 80px;
     transition: opacity 0.3s ease;
 }
 
@@ -84,39 +83,14 @@ body {
 .search-bar button {
     background: transparent;
     border: none;
-    padding: 6px 25px;
+    padding: 6px 20px;
     cursor: pointer;
-    font-size: 2.0rem;
-}
-
-.user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.user-avatar img {
-    width: 32px;      
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd; 
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.user-avatar img:hover {
-    transform: scale(1.05);
+    font-size: 1.8rem;
 }
 
 .nav-menu {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -133,6 +107,26 @@ body {
     color: #391C1C;
 }
 
+.user-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px; 
+}
+
+.user-avatar img {
+    width: 32px;      
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd; 
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.user-avatar img:hover {
+    transform: scale(1.05);
+}
 /* hero section */
 .hero-section {
   min-height: 700px;
@@ -673,8 +667,50 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .header-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+  }
+
+  .logo {
+    flex: 0 0 auto; 
+  }
+
+  .logo img {
+    height: 70px;
+  }
+
+  .search-bar {
+    flex: 1 1 auto;                 
+    max-width: 450px; 
+  }
+
+  .nav-menu {
+    flex: 0 1 auto;
+    display: flex;
+    flex-wrap: nowrap;      
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #D6CCC2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
   .footer-main {
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 40px;
   }
 
@@ -684,10 +720,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .logo img {
-    height: 80px;
-  }
-    
   .footer {
     padding: 60px 20px 30px;
   }
@@ -719,46 +751,6 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .header-container {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 15px;
-    height: auto;
-    padding: 10px 0;
-  }
-
-  .search-bar {
-    max-width: 100%;
-    order: 3;
-  }
-
-  .nav-menu {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .logo img {
-    height: 120px;
-  }
+@media (max-width: 425px) {
+  .logo img { height: 45px; }
 }
-
-@media (max-width: 480px) {
-    .logo img {
-    height: 100px;
-  }
-    
-  .footer-brand h2 {
-    font-size: 2.8rem;
-    letter-spacing: -2px;
-  }
-
-  .footer {
-    padding: 40px 15px 20px;
-  }
-}
-
-
-
-
