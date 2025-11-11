@@ -181,7 +181,7 @@ body {
   }
 
   .style-title {
-    font-size: 6rem; 
+    font-size: 5rem; 
     letter-spacing: -4px;
   }
 }
@@ -681,6 +681,7 @@ h1 {
 @media (max-width: 425px) {
   .logo img { height: 45px; }
 }
+
 
 
 
