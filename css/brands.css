@@ -379,21 +379,22 @@ body {
 }
 
 .hero-cta {
-    display: inline-block;
-    padding: 14px 40px;
-    background: #391C1C;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
+  display: inline-block;
+  padding: 14px 40px;
+  background: #391c1c;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: 2px solid #391c1c;
 }
 
 .hero-cta:hover {
-    background: #67645E;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(57, 28, 28, 0.3);
+  background: #ffffff;
+  color: #391c1c;
+  transform: translateY(-2px);
 }
 
 /* Category Tags */
