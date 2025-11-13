@@ -784,9 +784,9 @@ a:visited {
     max-width: 45%;
   }
   .search-bar input {
-    width: 100%;   /* input chiếm toàn bộ search bar */
+    width: 100%; 
     overflow: hidden;
-    text-overflow: ellipsis;  /* ... khi vượt chiều ngang */
+    text-overflow: ellipsis;  
     white-space: nowrap;   
   }
 
@@ -917,6 +917,7 @@ a:visited {
     padding-top: 20px;
   } 
 }
+
 
 
 
