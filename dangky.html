@@ -58,45 +58,19 @@
                         <input type="password" id="password" placeholder="Re-enter password" required>
                     </div>
                     
-                    <button type="submit" class="btn-submit">ĐĂNG KÝ</button>
+                    <a href="index.html">
+                        <button type="button" class="btn-submit">ĐĂNG KÝ</button>                    
+                    </a>
                     
                     <div class="form-footer">
                         <p>Bạn đã có tài khoản? <a href="dangnhap.html">Đăng nhập ngay!</a></p>
                     </div>
                 </form>
-                
-                <div id="errorMessage" class="error-message"></div>
             </div>
         </div>
     </div>
 
-    <script>
-        // Fixed credentials for demo
-        const DEMO_EMAIL = "demo@vinistyle.com";
-        const DEMO_PASSWORD = "vinistyle2024";
-
-        function handleLogin(event) {
-            event.preventDefault();
-            
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const errorMessage = document.getElementById('errorMessage');
-            
-            if (email === DEMO_EMAIL && password === DEMO_PASSWORD) {
-                // Store login status
-                localStorage.setItem('isLoggedIn', 'true');
-                localStorage.setItem('userEmail', email);
-                
-                // Redirect to homepage
-                window.location.href = 'index.html';
-            } else {
-                errorMessage.textContent = 'Email hoặc mật khẩu không đúng. Demo: demo@vinistyle.com / vinistyle2024';
-                errorMessage.style.display = 'block';
-            }
-        }
-    </script>
-
-            <!-- Footer -->
+<!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
@@ -156,5 +130,6 @@
 </body>
 
 </html>
+
 
 
