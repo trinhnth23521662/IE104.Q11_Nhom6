@@ -764,7 +764,9 @@ a:visited {
 
 @media (max-width: 768px) {
   .header-container {
+    padding: 0 15px;
     width: 95%;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -779,9 +781,7 @@ a:visited {
   }
 
   .search-bar {
-    flex: none; 
-    width: 150px;
-    max-width: 45%;
+    max-width: 100%;
   }
   .search-bar input {
     width: 100%; 
@@ -793,6 +793,9 @@ a:visited {
   .search-bar button {
       display: none;
   }
+  .user-avatar {
+        margin-left: 5px;
+    }
   .nav-menu {
     position: absolute;
     top: 80px; 
@@ -917,6 +920,7 @@ a:visited {
     padding-top: 20px;
   } 
 }
+
 
 
 
