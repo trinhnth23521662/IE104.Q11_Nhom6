@@ -97,7 +97,7 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 0px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -521,3 +521,4 @@ body {
     padding-top: 20px;
   } 
 }
+
