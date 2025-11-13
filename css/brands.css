@@ -332,18 +332,6 @@ body {
     color: #391C1C;
 }
 
-.user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #D6CCC2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
 /* Breadcrumb */
 .breadcrumb {
     background: #F1F0EC;
