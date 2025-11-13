@@ -792,8 +792,52 @@ body {
     margin-bottom: 10px;
   }
 
-  .footer-bottom {
-    font-size: 0.8rem;
-    padding-top: 20px;
-  } 
+/* Footer Connect CTA */
+.footer-connect-cta {
+    text-align: right;
+    margin-bottom: 5px;
+    padding-right: 20px;
 }
+
+.connect-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #67645E;
+    letter-spacing: 1.5px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.connect-title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #67645E;
+    letter-spacing: -1px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.connect-title:hover {
+    color: #391C1C;
+    text-decoration: none;
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.connect-title:hover .arrow-icon {
+    transform: translate(5px, -5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #D6CCC2;
+    color: #67645E;
+    font-size: 0.85rem;
+}
+
