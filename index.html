@@ -8,41 +8,46 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="./images/icon.png" />
   </head>
   <body>
     <!-- Header -->
     <header class="main-header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html">
-                <img src="./images/index/vinistyle_logo1.png" alt="ViniStyle Logo">
-                </a>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Tìm kiếm brand, style, sản phẩm...">
-                <button>⌕</button>
-            </div>
-            <nav class="nav-menu">
-                <a href="khampha.html">Khám phá</a>
-                <a href="brands.html">Thương hiệu</a>
-                <a href="collection.html">Bộ sưu tập</a>
-                <a href="about.html">Về chúng tôi</a>
-            </nav>
-             <div class="user-avatar">
-                <a href="dangnhap.html">
-                  <img src="https://avatar.iran.liara.run/public/64" alt="User Avatar">
-                </a>
-            </div>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./images/index/vinistyle_logo1.png" alt="ViniStyle Logo" />
+          </a>
         </div>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Tìm kiếm brand, style, sản phẩm..." />
+          <button>⌕</button>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+        <nav class="nav-menu">
+          <a href="khampha.html">Khám phá</a>
+          <a href="brands.html">Thương hiệu</a>
+          <a href="collection.html">Bộ sưu tập</a>
+          <a href="about.html">Về chúng tôi</a>
+        </nav>
+
+        <div class="user-avatar">
+          <img
+            src="https://avatar.iran.liara.run/public/64"
+            alt="User Avatar"
+          />
+        </div>
+      </div>
     </header>
+
     <!-- Hero Section -->
     <section class="hero-section">
       <!-- Background collage -->
-      <div class="hero-background">
-        <img src="./images/index/hinh1.jpg" alt="" />
-      </div>
+      <div class="hero-background" style="background-image: url('images/index/hinh1.jpg');"></div>
 
       <!-- White content box -->
       <div class="hero-content-box">
@@ -71,10 +76,7 @@
       <div class="categories-grid">
         <div class="category-card">
           <div class="category-image">
-            <img
-              src="./images/index/category1.jfif"
-              alt="Glaze"
-            />
+            <img src="./images/index/category1.jfif" alt="Glaze" />
           </div>
           <div class="category-info">
             <h3 class="category-name">Minimalist</h3>
@@ -87,10 +89,7 @@
 
         <div class="category-card">
           <div class="category-image">
-            <img
-              src="./images/index/category2.jfif"
-              alt="Comfort"
-            />
+            <img src="./images/index/category2.jfif" alt="Comfort" />
           </div>
           <div class="category-info">
             <h3 class="category-name">Streetwear</h3>
@@ -103,10 +102,7 @@
 
         <div class="category-card">
           <div class="category-image">
-            <img
-              src="./images/index/category3.jfif"
-              alt="Trio"
-            />
+            <img src="./images/index/category3.jfif" alt="Trio" />
           </div>
           <div class="category-info">
             <h3 class="category-name">Vintage</h3>
@@ -207,57 +203,67 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h2>vinistyle</h2>
-            </div>
-            
-            <div class="footer-main">
-                <div class="footer-newsletter">
-                    <h3>Tham gia cùng chúng tôi trên hành trình khám phá thời trang.</h3>
-                    <p>Cập nhật xu hướng, mẹo phối đồ & nội dung độc quyền từ ViniStyle.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Địa chỉ Email" required>
-                        <a href="dangky.html">
-                           <button type="button">ĐĂNG KÝ</button>
-                        </a>
-                    </form>
-                    <p class="privacy-note">Bằng việc đăng ký, bạn đồng ý với <a href="#privacy">Chính sách bảo mật</a> của chúng tôi.*</p>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Navigate</h4>
-                    <ul>
-                        <li><a href="khampha.html">Khám phá</a></li>
-                        <li><a href="brands.html">Thương hiệu</a></li>
-                        <li><a href="collection.html">Bộ sưu tập</a></li>
-                        <li><a href="about.html">Về chúng tôi</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Social</h4>
-                    <ul>
-                        <li><a href="#instagram">Instagram</a></li>
-                        <li><a href="#tiktok">TikTok</a></li>
-                        <li><a href="#facebook">Facebook</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="contact.html">Liên hệ</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#privacy">Chính sách</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; vinistyle 2025</p>
-            </div>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>vinistyle</h2>
         </div>
+
+        <div class="footer-main">
+          <div class="footer-newsletter">
+            <h3>
+              Tham gia cùng chúng tôi trên hành trình khám phá thời trang.
+            </h3>
+            <p>
+              Cập nhật xu hướng, mẹo phối đồ & nội dung độc quyền từ ViniStyle.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Địa chỉ Email" required />
+              <button type="submit">ĐĂNG KÝ</button>
+            </form>
+            <p class="privacy-note">
+              Bằng việc đăng ký, bạn đồng ý với
+              <a href="#privacy">Chính sách bảo mật</a> của chúng tôi.*
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="khampha.html">Khám phá</a></li>
+              <li><a href="brands.html">Thương hiệu</a></li>
+              <li><a href="collection.html">Bộ sưu tập</a></li>
+              <li><a href="about.html">Về chúng tôi</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="#instagram">Instagram</a></li>
+              <li><a href="#tiktok">TikTok</a></li>
+              <li><a href="#facebook">Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="contact.html">Liên hệ</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#privacy">Chính sách</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; vinistyle 2025</p>
+        </div>
+      </div>
     </footer>
+    <script>
+      document.querySelector(".menu-toggle").addEventListener("click", () => {
+        document.querySelector(".nav-menu").classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
