@@ -21,6 +21,7 @@
                 <input type="text" placeholder="Tìm kiếm brand, style, sản phẩm...">
                 <button>⌕</button>
             </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <nav class="nav-menu">
                 <a href="khampha.html">Khám Phá</a>
                 <a href="brands.html">Thương Hiệu</a>
@@ -241,6 +242,12 @@
                 suggestionsDiv.classList.add('active');
             }
         });
+    });
+    </script>
+
+    <script>
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+      document.querySelector(".nav-menu").classList.toggle("active");
     });
     </script>
 
