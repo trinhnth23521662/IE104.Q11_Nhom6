@@ -235,7 +235,7 @@ body {
 
 
 /* Product*/
-h1 {
+h2 {
     
     font-size: 3rem;
     font-weight: 500;
@@ -534,22 +534,18 @@ h1 {
     color: #999;
 }
 
-.newsletter-form button {
-    padding: 12px 30px;
-    background: #391C1C;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #391c1c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.newsletter-form button:hover {
-    background: #67645E;
+.btn:hover {
+    background-color: #391c1c;
 }
 
 .privacy-note {
@@ -720,6 +716,7 @@ h1 {
     padding-top: 20px;
   } 
 }
+
 
 
 
