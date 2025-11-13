@@ -1,6 +1,6 @@
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "search.css";
+    link.href = "./css/search.css";
     document.head.appendChild(link);
     // Dữ liệu mẫu cho search suggestions
     const searchData = [
@@ -92,4 +92,5 @@
             }
         });
     });
+
     
