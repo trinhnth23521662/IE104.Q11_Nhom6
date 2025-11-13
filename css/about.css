@@ -869,6 +869,16 @@ body {
     font-size: 0.85rem;
 }
 
+/* Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #391C1C;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-about-content h1 {
@@ -902,28 +912,64 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* === HEADER RESPONSIVE === */
     .header-container {
-        flex-wrap: wrap;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
     }
-    
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .search-bar {
+        flex: 1;
+        max-width: none;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 80px; 
+        right: 10px;
+        width: auto;
+        flex-direction: column;
+        background: #fff;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-menu a {
+        padding: 12px 20px;
+        text-align: right;
+        white-space: nowrap;
+        border-top: 1px solid rgba(214, 204, 194, 0.2);
+    }
+
+    /* === PAGE SPECIFIC RESPONSIVE === */
     .footer-connect-cta {
-    text-align: center;
-    padding-right: 0;
+        text-align: center;
+        padding-right: 0;
     }
 
     .connect-title {
-    font-size: 2rem;
-    }
-    
-    .search-bar {
-        order: 3;
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    .nav-menu {
-        gap: 15px;
-        font-size: 0.85rem;
+        font-size: 2rem;
     }
     
     .hero-about {
@@ -946,17 +992,53 @@ body {
     .cta-content-about h2 {
         font-size: 2rem;
     }
-    
+
+    /* === FOOTER RESPONSIVE === */
     .footer-brand h2 {
-        font-size: 3rem;
+        font-size: 4rem;
+        line-height: 1;
         letter-spacing: -2px;
     }
-    
+
     .footer-main {
-        grid-template-columns: 1fr;
-    }
-    
-    .newsletter-form {
+        display: flex;
         flex-direction: column;
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    .footer-newsletter {
+        padding: 0;
+        text-align: center;
+    } 
+
+    .footer-newsletter .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-newsletter .newsletter-form input {
+        width: 100%;
+    } 
+
+    .footer-newsletter .newsletter-form button {
+        width: 100%;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-column ul {
+        padding: 0;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding-top: 20px;
     }
 }
