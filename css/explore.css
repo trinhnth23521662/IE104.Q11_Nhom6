@@ -701,8 +701,36 @@ a:visited {
     font-size: 0.85rem;
 }
 /* Responsive*/
-
 @media (max-width: 1024px) {
+    .header-container {
+        gap: 10px;
+    }   
+    .logo img {
+        height: 60px;
+    }  
+    .search-bar {
+        max-width: 380px;
+        border-radius: 20px;
+    }
+    .search-bar input {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+    .search-bar button {
+        padding: 4px 18px;
+        font-size: 1.6rem;
+    }  
+    .nav-menu {
+        gap: 18px;
+    }
+    .nav-menu a {
+        font-size: 0.85rem;
+    }  
+    .user-avatar img {
+        width: 28px;
+        height: 28px;
+    }
+    
   .trend-section2 {
     flex-direction: column;    
     align-items: center;
@@ -710,48 +738,38 @@ a:visited {
     padding: 50px 40px;
     gap: 40px;
   }
-
   .section-header2 {
     text-align: center;         
   }
-
   .section-header2 h2 {
     font-size: 30px;
   }
-
   .section-header2 p {
     font-size: 15px;
     max-width: 700px;
     margin: 0 auto;
   }
-
   .button-group {
     justify-content: center;    
     flex-wrap: wrap;            
     gap: 16px;
   }
-
   .trend-section2 img {
     max-width: 500px;         
   }
-
    .cta-section {
     padding: 80px 40px;
   }
-
   .cta-section h2 {
     font-size: 2.2rem;
   }
-
   .cta-section > p {
     font-size: 1rem;
     max-width: 700px;
   }
-
   .cta-buttons {
     gap: 12px;
   }
-
   .cta-btn {
     padding: 14px 32px;
     font-size: 0.9rem;
@@ -917,6 +935,7 @@ a:visited {
     padding-top: 20px;
   } 
 }
+
 
 
 
