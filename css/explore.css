@@ -704,7 +704,7 @@ a:visited {
     color: #67645E;
     font-size: 0.85rem;
 }
-* Responsive*/
+/* Responsive*/
 
 @media (max-width: 1024px) {
   .trend-section2 {
@@ -921,6 +921,7 @@ a:visited {
     padding-top: 20px;
   } 
 }
+
 
 
 
