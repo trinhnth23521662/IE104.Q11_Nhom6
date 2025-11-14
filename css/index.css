@@ -63,8 +63,7 @@ body {
     display: flex;
     background: #F1F0EC;
     border-radius: 25px;
-    overflow: visible;
-    position: relative;
+    overflow: hidden;
 }
 
 .search-bar input {
@@ -101,7 +100,7 @@ body {
     max-height: 400px;
     overflow-y: auto;
     display: none;
-    z-index: 10000;
+    z-index: 1000; /* Tăng z-index */
     margin-top: 5px;
     border: 1px solid #F1F0EC;
 }
@@ -914,7 +913,5 @@ body {
     padding-top: 20px;
   } 
 }
-
-
 
 
