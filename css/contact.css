@@ -11,6 +11,12 @@ body {
     line-height: 1.6;
 }
 
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* Header with Blur Effect */
 .main-header {
     background: rgba(255, 255, 255, 0.8);
@@ -63,8 +69,7 @@ body {
     display: flex;
     background: #F1F0EC;
     border-radius: 25px;
-    overflow: visible;
-    position: relative;
+    overflow: hidden;
 }
 
 .search-bar input {
@@ -296,9 +301,11 @@ body {
 
 .contact-form {
     background: #FFFFFF;
-    padding: 50px 40px;
+    padding: 40px 30px;
     border-radius: 20px;
     box-shadow: 0 5px 20px rgba(103, 100, 94, 0.08);
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .required-note {
