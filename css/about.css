@@ -212,25 +212,6 @@ body {
     transform: scale(1.05);
 }
 
-.nav-menu {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #67645E;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-}
-
-.nav-menu a:hover,
-.nav-menu a.active {
-    color: #391C1C;
-}
-
 /* Hero About Section */
 .hero-about {
     position: relative;
