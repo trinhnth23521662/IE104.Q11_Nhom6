@@ -67,8 +67,7 @@ html {
     display: flex;
     background: #F1F0EC;
     border-radius: 25px;
-    overflow: visible;
-    position: relative;
+    overflow: hidden;
 }
 
 .search-bar input {
@@ -1026,46 +1025,6 @@ html {
     font-size: 0.85rem;
 }
 
-/* Footer Connect CTA */
-.footer-connect-cta {
-    text-align: right;
-    margin-bottom: 5px;
-    padding-right: 20px;
-}
-
-.connect-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #67645E;
-    letter-spacing: 1.5px;
-    margin-bottom: 2px;
-    text-transform: uppercase;
-}
-
-.connect-title {
-    font-size: 3rem;
-    font-weight: 300;
-    color: #67645E;
-    letter-spacing: -1px;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    text-decoration: none;
-}
-
-.connect-title:hover {
-    color: #391C1C;
-    text-decoration: none;
-}
-
-.arrow-icon {
-    transition: transform 0.3s ease;
-}
-
-.connect-title:hover .arrow-icon {
-    transform: translate(5px, -5px);
-}
 /* Responsive Design */
 @media (max-width: 1024px) {
   .styles-grid {
@@ -1084,7 +1043,9 @@ html {
 
 @media (max-width: 768px) {
   .header-container {
+    padding: 0 15px;
     width: 95%;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -1099,8 +1060,18 @@ html {
   }
 
   .search-bar {
-    flex: 1;
-    max-width: none;
+    max-width: 100%
+  }
+
+  .search-bar input {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .search-bar button {
+    display: none;
   }
 
   .nav-menu {
@@ -1324,4 +1295,3 @@ html {
     line-height: 1;
   }
 }
-
