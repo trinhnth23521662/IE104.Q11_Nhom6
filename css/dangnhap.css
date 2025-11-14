@@ -531,105 +531,167 @@ body {
 }
 
 @media (max-width: 768px) {
-.header-container {
-    width: 95%;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
+    /* === HEADER RESPONSIVE === */
+    .header-container {
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
 
-  .menu-toggle {
-    display: block;
-  }
+    .menu-toggle {
+        display: block;
+    }
 
-  .logo img {
-    height: 60px;
-  }
+    .logo img {
+        height: 60px;
+    }
 
-  .search-bar {
-    flex: 1;
-    max-width: none;
-  }
+    .search-bar {
+        flex: 1;
+        max-width: none;
+    }
 
-   .search-suggestions {
+    .search-suggestions {
         left: 0;
         transform: none;
         width: 100%;
         max-width: none;
-   }
+    }
 
-  .nav-menu {
-    position: absolute;
-    top: 80px; 
-    right: 10px;
-    width: auto;
-    flex-direction: column;
-    background: #fff;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-  }
+    .nav-menu {
+        position: absolute;
+        top: 80px; 
+        right: 10px;
+        width: auto;
+        flex-direction: column;
+        background: #fff;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
 
-  .nav-menu.active {
-    max-height: 500px;
-    opacity: 1;
-    pointer-events: auto;
-  }
+    .nav-menu.active {
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
+    }
 
-  .nav-menu a {
-    padding: 12px 20px;
-    text-align: right;
-    white-space: nowrap;
-    border-top: 1px solid rgba(214, 204, 194, 0.2);
-  }
-    
-  .footer-brand h2 {
-    font-size: 4rem;
-    line-height: 1;
-  }
+    .nav-menu a {
+        padding: 12px 20px;
+        text-align: right;
+        white-space: nowrap;
+        border-top: 1px solid rgba(214, 204, 194, 0.2);
+    }
 
-  .footer-main {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 0 10px;
-  }
+    /* === PAGE SPECIFIC RESPONSIVE === */
+    .form-content h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
-   .footer-newsletter {
-    padding: 0;
-    text-align: center;
-  } 
+    .image-text h2 {
+        font-size: 1.5rem;
+    }
 
-  .footer-newsletter .newsletter-form {
-    flex-direction: column;
-    gap: 10px
-  }
+    .form-container,
+    .login-container,
+    .auth-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 15px;
+    }
 
-   .footer-newsletter .newsletter-form input {
-    width: 100%;
-  } 
+    .form-group,
+    .input-group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-  .footer-newsletter .newsletter-form button {
-    width: 100%;
-  }
+    .form-group input,
+    .input-group input {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
 
-  .footer-column {
-    text-align: center;
-  }
+    .btn-login,
+    .submit-btn,
+    .login-btn {
+        width: 100%;
+        padding: 16px;
+        font-size: 1rem;
+        margin: 20px 0;
+    }
 
-   .footer-column ul {
-    padding: 0;
-  }
+    .form-links,
+    .login-links {
+        text-align: center;
+        width: 100%;
+    }
 
-  .footer-column ul li {
-    margin-bottom: 10px;
-  }
+    .form-links a,
+    .login-links a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
 
-  .footer-bottom {
-    font-size: 0.8rem;
-    padding-top: 20px;
-  } 
+    /* === FOOTER RESPONSIVE === */
+    .footer-brand h2 {
+        font-size: 4rem;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+
+    .footer-main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    .footer-newsletter {
+        padding: 0;
+        text-align: center;
+        grid-column: span 1;
+    } 
+
+    .footer-newsletter .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-newsletter .newsletter-form input {
+        width: 100%;
+    } 
+
+    .footer-newsletter .newsletter-form button {
+        width: 100%;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-column ul {
+        padding: 0;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding-top: 20px;
+    }
 }
