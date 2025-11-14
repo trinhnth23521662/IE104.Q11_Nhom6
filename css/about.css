@@ -797,16 +797,7 @@ body {
         border-top: 1px solid rgba(214, 204, 194, 0.2);
     }
 
-        /* === PAGE SPECIFIC RESPONSIVE === */
-    .footer-connect-cta {
-        text-align: center;
-        padding-right: 0;
-    }
-
-    .connect-title {
-        font-size: 2rem;
-    }
-
+    /* === PAGE SPECIFIC RESPONSIVE === */
     .hero-about {
         height: 500px;
     }
