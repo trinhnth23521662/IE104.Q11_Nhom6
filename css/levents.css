@@ -901,8 +901,23 @@ body {
         font-size: 2rem;
     }
 
+    .collection-layout,
+    .story-layout,
+    .proof-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .story-text h2,
+    .proof-text h2 {
+        font-size: 2rem;
+    }
+
     .showcase-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
     }
 
     .showcase-item.large {
@@ -920,6 +935,27 @@ body {
 
     .cta-website h2 {
         font-size: 2rem;
+    }
+
+    .special-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .story-text p,
+    .proof-text p,
+    .collection-info p,
+    .special-item p {
+        font-size: 0.9rem;
+    }
+
+    .brand-intro,
+    .brand-special,
+    .community-proof,
+    .team-section {
+        padding: 60px 15px;
     }
 
     /* === FOOTER RESPONSIVE === */
