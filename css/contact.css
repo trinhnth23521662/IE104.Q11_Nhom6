@@ -680,34 +680,18 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .contact-hero h1 {
-        font-size: 2.5rem;
-    }
+  .styles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+  }
 
-    .contact-info-grid {
-        grid-template-columns: 1fr;
-    }
+  .style-image {
+    height: 300px;
+  }
 
-    .footer-account-cta {
-        padding: 50px 40px;
-    }
-
-    .account-cta-content h3 {
-        font-size: 2rem;
-    }
-
-    .footer-brand h2 {
-        font-size: 6rem;
-    }
-    
-    .footer-main {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-    
-    .footer-newsletter {
-        grid-column: span 2;
-    }
+  .style-content {
+    padding: 24px;
+  }
 }
 
 @media (max-width: 768px) {
