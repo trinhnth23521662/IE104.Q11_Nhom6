@@ -1009,7 +1009,7 @@ body {
         border-top: 1px solid rgba(214, 204, 194, 0.2);
     }
 
-    /* === PAGE SPECIFIC RESPONSIVE === */
+        /* === PAGE SPECIFIC RESPONSIVE === */
     .brand-title {
         font-size: 4rem;
         letter-spacing: -2px;
@@ -1023,8 +1023,35 @@ body {
         font-size: 2rem;
     }
 
+    .collection-layout,
+    .story-layout,
+    .proof-content,
+    .vision-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .intro-content,
+    .story-text,
+    .proof-text,
+    .vision-text,
+    .collection-info {
+        padding: 0 15px;
+    }
+
+    .intro-content p,
+    .story-text p,
+    .proof-text p,
+    .vision-text p,
+    .collection-info p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
     .showcase-grid {
         grid-template-columns: 1fr;
+        padding: 0 15px;
     }
 
     .showcase-item.large {
@@ -1042,10 +1069,12 @@ body {
     .proof-stats {
         flex-direction: column;
         gap: 25px;
+        padding: 0 15px;
     }
 
     .story-images {
         grid-template-columns: 1fr;
+        padding: 0 15px;
     }
 
     .story-images img:first-child {
@@ -1054,6 +1083,26 @@ body {
 
     .cta-website h2 {
         font-size: 2rem;
+    }
+
+    .timeline,
+    .history-grid,
+    .collab-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .community-content,
+    .community-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .community-stats {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 
     /* === FOOTER RESPONSIVE === */
