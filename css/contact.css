@@ -761,6 +761,17 @@ body {
         font-size: 0.95rem;
     }
 
+    .contact-info-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 0 10px; 
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+        margin: 0 10px; 
+    }
+
     .footer-account-cta {
         padding: 40px 30px;
         border-radius: 15px;
