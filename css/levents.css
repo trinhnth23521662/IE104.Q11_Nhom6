@@ -13,7 +13,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -69,8 +69,7 @@ body {
     display: flex;
     background: #F1F0EC;
     border-radius: 25px;
-    overflow: visible;
-    position: relative;
+    overflow: hidden;
 }
 
 .search-bar input {
@@ -99,15 +98,17 @@ body {
 .search-suggestions {
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
+    left: 37%;
+    transform: translateX(-50%); 
+    width: 90%; 
+    max-width: 500px;
     background: #FFFFFF;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     max-height: 400px;
     overflow-y: auto;
     display: none;
-    z-index: 1000; /* Tăng z-index */
+    z-index: 1000;
     margin-top: 5px;
     border: 1px solid #F1F0EC;
 }
@@ -906,6 +907,13 @@ body {
 
     .search-bar {
         flex: 1;
+        max-width: none;
+    }
+    
+    .search-suggestions {
+        left: 0;
+        transform: none;
+        width: 100%;
         max-width: none;
     }
 
