@@ -704,6 +704,14 @@ body {
     color: #391C1C;
 }
 
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #D6CCC2;
+    color: #67645E;
+    font-size: 0.85rem;
+}
+
 /* Menu Toggle Button */
 .menu-toggle {
   display: none;
