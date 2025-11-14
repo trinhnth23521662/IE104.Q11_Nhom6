@@ -11,12 +11,6 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
 /* Header with Blur Effect */
 .main-header {
     background: rgba(255, 255, 255, 0.8);
@@ -39,8 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    height: 100%;
+    gap: 15px;
 }
 
 .logo h1 {
@@ -56,9 +49,7 @@ body {
 }
 
 .logo img {
-    height: 200px;
-    width: auto;
-    display: block;
+    height: 80px;
     transition: opacity 0.3s ease;
 }
 
@@ -72,8 +63,7 @@ body {
     display: flex;
     background: #F1F0EC;
     border-radius: 25px;
-    overflow: visible; 
-    position: relative;
+    overflow: hidden;
 }
 
 .search-bar input {
@@ -110,7 +100,7 @@ body {
     max-height: 400px;
     overflow-y: auto;
     display: none;
-    z-index: 10000; 
+    z-index: 1000; 
     margin-top: 5px;
     border: 1px solid #F1F0EC;
 }
@@ -171,6 +161,34 @@ body {
     text-align: center;
     color: #999;
     font-size: 0.9rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #67645E;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #391C1C;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #391C1C;
 }
 
 .user-avatar {
