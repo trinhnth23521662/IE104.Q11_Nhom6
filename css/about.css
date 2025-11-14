@@ -105,15 +105,17 @@ body {
 .search-suggestions {
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
+    left: 37%;
+    transform: translateX(-50%); 
+    width: 90%; 
+    max-width: 500px;
     background: #FFFFFF;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     max-height: 400px;
     overflow-y: auto;
     display: none;
-    z-index: 1000; /* Tăng z-index */
+    z-index: 1000;
     margin-top: 5px;
     border: 1px solid #F1F0EC;
 }
@@ -724,34 +726,18 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .hero-about-content h1 {
-        font-size: 2.5rem;
-    }
-    
-    .problem-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-main {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .footer-newsletter {
-        grid-column: 1 / -1;
-    }
-    
-    .footer-brand h2 {
-        font-size: 5rem;
-    }
+  .styles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+  }
+
+  .style-image {
+    height: 300px;
+  }
+
+  .style-content {
+    padding: 24px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -773,6 +759,13 @@ body {
 
     .search-bar {
         flex: 1;
+        max-width: none;
+    }
+
+    .search-suggestions {
+        left: 0;
+        transform: none;
+        width: 100%;
         max-width: none;
     }
 
