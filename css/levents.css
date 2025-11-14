@@ -879,15 +879,6 @@ body {
     }
 
     /* === PAGE SPECIFIC RESPONSIVE === */
-    .footer-connect-cta {
-        text-align: center;
-        padding-right: 0;
-    }
-
-    .connect-title {
-        font-size: 2rem;
-    }
-
     .brand-title {
         font-size: 4rem;
         letter-spacing: -2px;
