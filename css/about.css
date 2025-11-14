@@ -797,7 +797,7 @@ body {
         border-top: 1px solid rgba(214, 204, 194, 0.2);
     }
 
-    /* === PAGE SPECIFIC RESPONSIVE === */
+        /* === PAGE SPECIFIC RESPONSIVE === */
     .footer-connect-cta {
         text-align: center;
         padding-right: 0;
@@ -806,26 +806,90 @@ body {
     .connect-title {
         font-size: 2rem;
     }
-    
+
     .hero-about {
         height: 500px;
     }
-    
+
     .hero-about-content h1 {
         font-size: 1.8rem;
         letter-spacing: -0.5px;
     }
-    
+
     .mission-title {
         font-size: 2rem;
     }
-    
+
     .solution-heading {
         font-size: 2rem;
     }
-    
+
     .cta-content-about h2 {
         font-size: 2rem;
+    }
+
+    .problem-grid,
+    .features-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .mission-section,
+    .problem-section,
+    .solution-section,
+    .features-section,
+    .team-section {
+        padding: 60px 20px;
+    }
+
+    .mission-text,
+    .problem-text p,
+    .solution-subheading {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    .brand-logos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .logo-item {
+        padding: 30px 20px;
+        font-size: 1.2rem;
+    }
+
+    .feature-card {
+        padding: 40px 30px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+
+    .team-intro {
+        font-size: 1rem;
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .value-card {
+        padding: 30px 25px;
+    }
+
+    .value-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .value-card p {
+        font-size: 0.9rem;
     }
 
     /* === FOOTER RESPONSIVE === */
