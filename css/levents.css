@@ -11,6 +11,12 @@ body {
     line-height: 1.6;
 }
 
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 /* Header with Blur Effect */
 .main-header {
     background: rgba(255, 255, 255, 0.8);
