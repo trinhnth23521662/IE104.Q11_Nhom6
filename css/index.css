@@ -63,8 +63,7 @@ body {
     display: flex;
     background: #F1F0EC;
     border-radius: 25px;
-    overflow: visible;
-    position: relative;
+    overflow: hidden;
 }
 
 .search-bar input {
@@ -796,7 +795,9 @@ body {
 
 @media (max-width: 768px) {
   .header-container {
+    padding: 0 15px;
     width: 95%;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -811,8 +812,17 @@ body {
   }
 
   .search-bar {
-    flex: 1;
-    max-width: none;
+    max-width: 100%;
+  }
+  .search-bar input {
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    white-space: nowrap;   
+  }
+
+  .search-bar button {
+    display: none;
   }
 
   .nav-menu {
@@ -914,6 +924,4 @@ body {
     padding-top: 20px;
   } 
 }
-
-
 
