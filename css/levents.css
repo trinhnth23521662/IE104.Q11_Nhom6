@@ -806,45 +806,18 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .brand-title {
-        font-size: 6rem;
-        letter-spacing: -3px;
-    }
+  .styles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+  }
 
-    .collection-layout,
-    .story-layout,
-    .proof-content {
-        grid-template-columns: 1fr;
-    }
+  .style-image {
+    height: 300px;
+  }
 
-    .showcase-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .showcase-item.large {
-        grid-column: span 2;
-        grid-row: span 1;
-    }
-
-    .showcase-item.large img {
-        min-height: 400px;
-    }
-
-    .special-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-brand h2 {
-        font-size: 6rem;
-    }
-
-    .footer-main {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-newsletter {
-        grid-column: 1 / -1;
-    }
+  .style-content {
+    padding: 24px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -868,7 +841,7 @@ body {
         flex: 1;
         max-width: none;
     }
-    
+
     .search-suggestions {
         left: 0;
         transform: none;
