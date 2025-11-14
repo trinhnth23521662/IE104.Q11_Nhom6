@@ -1,17 +1,21 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: #F3F4EF;
-    color: #67645E;
-    line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  background: #f3f4ef;
+  color: #67645e;
+  line-height: 1.6;
 }
 
-/* Header with Blur Effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
 .main-header {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
@@ -84,12 +88,12 @@ body {
 .search-bar button {
     background: transparent;
     border: none;
-    padding: 6px 25px;
+    padding: 6px 20px;
     cursor: pointer;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
 }
 
-/* Search Suggestions Dropdown */
+  /* Search Suggestions Dropdown */
 .search-suggestions {
     position: absolute;
     top: 100%;
@@ -211,6 +215,11 @@ body {
 
 .user-avatar img:hover {
     transform: scale(1.05);
+}
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
 /* Breadcrumb */
