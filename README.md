@@ -12,7 +12,8 @@
   
   **GitHub:** Lưu trữ và quản lý mã nguồn
 ### Quản lý thư mục
-  **1. css**: Chứa các file css định dạng giao diện
+  **1. css**: Chứa các file css định dạng giao diện cho từng trang
+  - File **style.css** định dạng chung cho header và footer
   
   **2. images**: Chứa css file hình ảnh
   
