@@ -563,11 +563,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-    .brand-title {
-        font-size: 3rem; 
-    }
-    
+@media (max-width: 1024px) { 
   .styles-grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 24px;
