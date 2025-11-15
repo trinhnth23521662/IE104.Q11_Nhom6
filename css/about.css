@@ -75,7 +75,8 @@ body {
     display: flex;
     background: #F1F0EC;
     border-radius: 25px;
-    overflow: hidden;
+    overflow: visible;
+    position: relative;
 }
 
 .search-bar input {
@@ -745,7 +746,7 @@ body {
         width: 95%;
         justify-content: space-between;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
     }
 
     .menu-toggle {
@@ -753,7 +754,7 @@ body {
     }
 
     .logo img {
-        height: 60px;
+        height: 40px;
     }
 
     .search-bar {
