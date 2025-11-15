@@ -247,6 +247,13 @@
 .footer-column ul li a:hover {
   color: #391c1c;
 }
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #D6CCC2;
+    color: #67645E;
+    font-size: 0.85rem;
+}
 /* Responsive*/
 @media (max-width: 1024px) {
   /* Header*/
