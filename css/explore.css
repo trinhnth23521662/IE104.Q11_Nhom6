@@ -328,6 +328,23 @@ a:visited {
   transform: translateY(-2px);
 }
 
+/* Mũi tên scroll lên đầu trang */
+#Arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  background: rgb(215, 214, 214);
+  color: rgb(12, 12, 12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
 /* Responsive*/
 @media (max-width: 1024px) {
 /* Trend-section2*/
@@ -417,3 +434,4 @@ a:visited {
       padding: 10px;
   }
 }
+
