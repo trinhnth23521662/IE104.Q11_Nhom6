@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-  overflow-x: hidden;
-}
-
 body {
     font-family: 'Inter', sans-serif;
     background: #F3F4EF;
@@ -288,6 +284,7 @@ h2 {
     line-height: 1;
   }
 }
+
 
 
 
