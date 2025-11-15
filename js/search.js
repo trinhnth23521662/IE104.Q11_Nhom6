@@ -9,9 +9,9 @@
         { title: "Teelab", category: "Thương hiệu", icon: "ᥫ᭡", link: "#" },
         { title: "Hoodie", category: "Sản phẩm", icon: "𝜗ৎ", link: "#" },
         { title: "T-shirt", category: "Sản phẩm", icon: "𝜗ৎ", link: "#" },
-        { title: "Streetwear", category: "Phong cách", icon: "♛", link: "#" },
-        { title: "Minimalist", category: "Phong cách", icon: "♛", link: "#" },
-        { title: "Vintage", category: "Phong cách", icon: "♛", link: "#" },
+        { title: "Streetwear", category: "Phong cách", icon: "♛", link: "brands.html" },
+        { title: "Minimalist", category: "Phong cách", icon: "♛", link: "brands.html" },
+        { title: "Vintage", category: "Phong cách", icon: "♛", link: "brands.html" },
         { title: "Áo thun", category: "Sản phẩm", icon: "𝜗ৎ", link: "#" },
         { title: "Túi Tote", category: "Sản phẩm", icon: "𝜗ৎ", link: "#" },
         { title: "Local Brand", category: "Danh mục", icon: "✶", link: "brands.html" },
@@ -94,3 +94,4 @@
     });
 
     
+
