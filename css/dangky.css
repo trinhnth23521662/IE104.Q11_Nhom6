@@ -423,14 +423,6 @@ body {
     .auth-form {
         padding: 40px 20px;
     }
-
-    .footer-brand h2 {
-        font-size: 6rem;
-    }
-
-    .footer-main {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 768px) {
@@ -543,6 +535,7 @@ body {
     padding-top: 20px;
   } 
 }
+
 
 
 
