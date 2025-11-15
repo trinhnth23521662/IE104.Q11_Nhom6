@@ -636,6 +636,11 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .btn-follow {
+    font-size: 0.8rem; 
+    padding: 8px 16px;
+  }
+    
   .styles-grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 24px;
