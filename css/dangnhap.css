@@ -124,6 +124,18 @@ body {
 .btn-container {
     text-align: center; 
 }
+
+.link-secondary {
+    color: #5a5a5a;
+    text-decoration: underline;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.link-secondary:hover {
+    color: #391C1C;
+}
+
 .form-footer {
     text-align: center;
     margin-top: 30px;
