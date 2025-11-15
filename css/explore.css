@@ -784,7 +784,7 @@ a:visited {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
 
   .menu-toggle {
@@ -935,6 +935,7 @@ a:visited {
     padding-top: 20px;
   } 
 }
+
 
 
 
