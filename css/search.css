@@ -106,4 +106,36 @@
         padding: 15px;
         font-size: 0.8rem;
     }
+
+}
+@media (max-width: 480px) {
+    .search-suggestions {
+        max-height: 200px; 
+    }
+
+   
+    .suggestion-item {
+        padding: 8px 10px;
+        gap: 8px;
+    }
+
+    .suggestion-title {
+        font-size: 0.6rem; 
+    }
+
+    .suggestion-category {
+        font-size: 0.65rem; 
+    }
+
+    
+    .suggestion-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 0.9rem;
+    }
+
+    .no-results {
+        padding: 12px;
+        font-size: 0.8rem;
+    }
 }
