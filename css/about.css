@@ -373,16 +373,6 @@ body {
     box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
 }
 
-/* Menu Toggle Button */
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #391C1C;
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .styles-grid {
