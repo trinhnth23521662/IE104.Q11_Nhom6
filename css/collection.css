@@ -844,3 +844,9 @@ html {
     font-size: 1rem;
   }
 }
+
+@media (min-width: 1200px) {
+  .rules-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
