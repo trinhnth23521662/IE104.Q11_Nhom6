@@ -1,5 +1,5 @@
 
-  function handleLogin(event) {
+  window.handleLogin = function(event) {
     event.preventDefault(); // Ngăn chuyển trang mặc định
 
     const email = document.getElementById("email").value.trim();
@@ -19,4 +19,5 @@
     // Nếu hợp lệ → chuyển sang index.html
     window.location.href = "index.html";
   }
+
 
