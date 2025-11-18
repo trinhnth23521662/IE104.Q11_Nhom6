@@ -764,4 +764,14 @@ body {
     .cta-image-side {
         height: 350px;
     }
+
+    .brands-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cta-content-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
