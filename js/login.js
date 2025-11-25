@@ -6,7 +6,7 @@
             
             // Nếu chưa đăng nhập, redirect về login
             if (isLoggedIn !== 'true') {
-                window.location.href = 'dangnhap.html';
+                window.location.href = 'login.html';
                 return;
             }
             
@@ -28,7 +28,7 @@
                 alert('✓ Đã đăng xuất thành công!');
                 
                 // Chuyển về trang đăng nhập
-                window.location.href = 'dangnhap.html';
+                window.location.href = 'login.html';
             }
         }
 </script>
