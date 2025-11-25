@@ -115,10 +115,6 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-.action-section .section-title::before {
-    content: '⚒';
-}
-
 .action-btn {
     display: block;
     width: 60%; 
