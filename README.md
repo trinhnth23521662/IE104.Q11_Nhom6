@@ -23,12 +23,13 @@
   
   **5. Các file html**: Các trang web 
   - index.html: Trang chủ giới thiệu thương hiệu thời trang Việt Nam
-  - khampha.html: Trang khám phá chung
+  - explore.html: Trang khám phá chung
       + vintage.html: Trang giới thiệu về phong cách Vintage
   - brands.html: Trang giới thiệu về các thương hiệu thời trang Việt Nam
       + levents.html: Trang giới thiệu về Levents
       + dirtycoins.html: Trang giới thiệu về DirtyCoints
   - collection.html: Trang bộ sưu tập giới thiệu một vài tips phối đồ
   - about.html: Trang giới thiệu về dự án và nhóm thực hiện
-  - dangky.html: Trang đăng ký tài khoản
-  - dangnhap.html: Trang đăng nhập
+  - signup.html: Trang đăng ký tài khoản
+  - login.html: Trang đăng nhập
+  - profile.html: Trang hồ sơ cá nhân
