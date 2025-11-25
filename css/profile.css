@@ -143,6 +143,7 @@ body {
 .btn-settings {
     background: #F3F4EF;
     color: #391C1C;
+     border: 2px solid #391C1C;
 }
 
 .btn-settings:hover {
