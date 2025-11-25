@@ -137,31 +137,25 @@ body {
 }
 
 .btn-edit:hover {
-    background: #5a3a3a;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(57, 28, 28, 0.3);
+    transform: translateY(-2px);    
 }
 
 .btn-settings {
     background: #F3F4EF;
     color: #391C1C;
-    border: 2px solid #391C1C;
 }
 
 .btn-settings:hover {
-    background: #391C1C;
-    color: white;
+     transform: translateY(-2px);
 }
 
 .btn-logout {
-    background: #ff4444;
-    color: white;
+   background: #eb2020;
+   color: rgb(245, 238, 238);
 }
 
 .btn-logout:hover {
-    background: #cc0000;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 68, 68, 0.4);
 }
 
 @media (max-width: 768px) {
