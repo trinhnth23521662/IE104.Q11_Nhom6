@@ -121,17 +121,18 @@ body {
 
 .action-btn {
     display: block;
-    width: 100%;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-radius: 12px;
+    width: 60%; 
+    padding: 12px 20px; 
+    margin: 0 auto 15px auto; 
+    border-radius: 25px; 
     text-align: center;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s;
+    font-size: 0.9rem; 
+    transition: all 0.3s ease;
     cursor: pointer;
     border: none;
+    max-width: 250px;
 }
 
 .btn-edit {
