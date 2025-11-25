@@ -116,7 +116,7 @@ body {
 }
 
 .action-section .section-title::before {
-    content: '⚙︎';
+    content: '⚒';
 }
 
 .action-btn {
