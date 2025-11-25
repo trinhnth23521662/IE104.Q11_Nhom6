@@ -1,43 +1,29 @@
-<script>
-        // Kiểm tra đăng nhập
-        window.addEventListener('DOMContentLoaded', () => {
-            const userEmail = localStorage.getItem('userEmail');
-            const isLoggedIn = localStorage.getItem('isLoggedIn');
+// Xử lý đăng nhập
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('loginForm');
+    
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        
+        // Kiểm tra thông tin đăng nhập
+        if (email && password) {
+            // Lưu thông tin đăng nhập
+            localStorage.setItem('isLoggedIn', 'true');
+            localStorage.setItem('userEmail', email);
             
-            // Nếu chưa đăng nhập, redirect về login
-            if (isLoggedIn !== 'true') {
-                window.location.href = 'login.html';
-                return;
-            }
-            
-            // Hiển thị email người dùng
-            if (userEmail) {
-                document.getElementById('userEmail').textContent = userEmail;
-                document.getElementById('displayEmail').textContent = userEmail;
-            }
-
-        // Nếu đăng nhập thành công, hiển thị popup
+            // Hiển thị popup thành công
             const popup = document.getElementById('successPopup');
             popup.classList.add('show');
-
-        // Sau đó chuyển hướng về trang chủ
-            setTimeout(() => {
+            
+            // Chuyển hướng sau 2 giây
+            setTimeout(function() {
                 window.location.href = 'profile.html';
             }, 2000);
-        });
-
-        // Hàm đăng xuất
-        function handleLogout() {
-            if (confirm('Bạn có chắc chắn muốn đăng xuất?')) {
-                // Xóa thông tin đăng nhập
-                localStorage.removeItem('isLoggedIn');
-                localStorage.removeItem('userEmail');
-                
-                // Hiển thị thông báo
-                alert('✓ Đã đăng xuất thành công!');
-                
-                // Chuyển về trang đăng nhập
-                window.location.href = 'login.html';
-            }
+        } else {
+            alert('Vui lòng nhập đầy đủ thông tin!');
         }
-</script>
+    });
+});
