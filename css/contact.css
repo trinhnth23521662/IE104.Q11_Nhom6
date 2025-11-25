@@ -223,9 +223,9 @@ body {
 }
 
 .submit-btn:hover {
-    background: #67645E;
+    background: #F3F4E;
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(57, 28, 28, 0.3);
+    color: #391C1C;
 }
 
 .form-disclaimer {
