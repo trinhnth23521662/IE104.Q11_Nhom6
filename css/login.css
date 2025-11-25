@@ -158,68 +158,6 @@ body {
     color: #67645E;
 }
 
-/* PHẦN DROPDOWN MENU CHO USER AVATAR */
-.user-avatar {
-    position: relative;
-}
-
-.user-avatar img {
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.user-avatar img:hover {
-    transform: scale(1.1);
-}
-
-/* Dropdown menu ẩn */
-.dropdown-menu {
-    position: absolute;
-    top: 55px;
-    right: 0;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    min-width: 200px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.user-avatar:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-/* Các item trong dropdown */
-.dropdown-menu a {
-    display: block;
-    padding: 15px 20px;
-    color: #67645E;
-    text-decoration: none;
-    transition: background 0.3s;
-    font-weight: 500;
-}
-
-/* Bo góc trên cho item đầu tiên */
-.dropdown-menu a:first-child {
-    border-radius: 8px 8px 0 0;
-}
-
-/* Bo góc dưới cho item cuối cùng */
-.dropdown-menu a:last-child {
-    border-radius: 0 0 8px 8px;
-    border-top: 1px solid #eee;
-}
-
-.dropdown-menu a:hover {
-    background: #f5f5f5;
-    color: #391C1C;
-}
-
 /* PHẦN POPUP THÔNG BÁO THÀNH CÔNG */
 /* Overlay nền tối phía sau popup */
 .popup-overlay {
