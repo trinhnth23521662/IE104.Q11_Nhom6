@@ -1,4 +1,3 @@
-<script>
 // Script điều hướng avatar thông minh
 document.addEventListener('DOMContentLoaded', function() {
     const avatarLink = document.getElementById('avatarLink');
@@ -10,4 +9,3 @@ document.addEventListener('DOMContentLoaded', function() {
         avatarLink.href = 'login.html'; // Chưa login → login
     }
 });
-</script>
