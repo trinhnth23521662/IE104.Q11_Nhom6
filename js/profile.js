@@ -17,9 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Handle logout functionality
-function handleLogout(event) {
-    event.preventDefault();
-    
+function handleLogout() {
     if (confirm('Bạn có chắc chắn muốn đăng xuất?')) {
         localStorage.removeItem('isLoggedIn');
         localStorage.removeItem('userEmail');
