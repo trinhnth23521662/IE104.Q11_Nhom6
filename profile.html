@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ - ViniStyle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="icon" type="image/png" href="./images/icon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/index/vinistyle_logo1.png" alt="ViniStyle Logo">
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm brand, style, sản phẩm...">
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="khampha.html">Khám Phá</a>
+                <a href="brands.html">Thương Hiệu</a>
+                <a href="collection.html">Bộ sưu tập</a>
+                <a href="about.html">Về chúng tôi</a>              
+            </nav>
+            
+            <div class="user-avatar">
+                <img src="./images/avatar.png" alt="User Avatar">
+                <div class="dropdown-menu">
+                    <a href="profile.html">HỒ SƠ</a>
+                    <a href="#" onclick="handleLogout(event)">ĐĂNG XUẤT</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Content -->
+    <div class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <img src="./images/avatar.png" alt="Profile Avatar" class="profile-avatar-large">
+            <h1 id="userName">Demo User</h1>
+            <p id="userEmail">demo@vinistyle.com</p>
+        </div>
+
+        <!-- Profile Stats -->
+        <div class="profile-stats">
+            <div class="stat-card">
+                <h3>15</h3>
+                <p>Sản phẩm đã mua</p>
+            </div>
+            <div class="stat-card">
+                <h3>8</h3>
+                <p>Đang theo dõi</p>
+            </div>
+            <div class="stat-card">
+                <h3>23</h3>
+                <p>Yêu thích</p>
+            </div>
+        </div>
+
+        <!-- Profile Information -->
+        <div class="profile-info">
+            <h2>Thông Tin Cá Nhân</h2>
+            
+            <div class="info-row">
+                <div class="info-label">Họ và tên:</div>
+                <div class="info-value">Nguyễn Văn A</div>
+            </div>
+            
+            <div class="info-row">
+                <div class="info-label">Email:</div>
+                <div class="info-value" id="displayEmail">demo@vinistyle.com</div>
+            </div>
+            
+            <div class="info-row">
+                <div class="info-label">Số điện thoại:</div>
+                <div class="info-value">0123 456 789</div>
+            </div>
+            
+            <div class="info-row">
+                <div class="info-label">Địa chỉ:</div>
+                <div class="info-value">123 Đường ABC, Quận 1, TP. Hồ Chí Minh</div>
+            </div>
+            
+            <div class="info-row">
+                <div class="info-label">Ngày tham gia:</div>
+                <div class="info-value">15/01/2024</div>
+            </div>
+            
+            <div class="info-row">
+                <div class="info-label">Phong cách yêu thích:</div>
+                <div class="info-value">Streetwear, Minimalist, Vintage</div>
+            </div>
+            
+            <a href="#" class="btn-edit" onclick="handleEditProfile(event)">Chỉnh Sửa Hồ Sơ</a>
+        </div>
+    </div>
+
+    <script src="./js/profile.js"></script>
+</body>
+</html>
