@@ -30,10 +30,12 @@
                 <a href="about.html">Về chúng tôi</a>              
             </nav>
             <div class="user-avatar">
-              <a href="login.html">
                 <img src="./images/avatar.png" alt="User Avatar">
-          </a>
-        </div>
+                <div class="dropdown-menu">
+                <a href="profile.html">Hồ Sơ</a>
+                <a href="#" onclick="handleLogout(event)">Đăng Xuất</a>
+            </div>
+</div>
       </div>
     </header>
 
@@ -74,31 +76,7 @@
         </div>
     </div>
 
-    <script>
-        // Fixed credentials for demo
-        const DEMO_EMAIL = "demo@vinistyle.com";
-        const DEMO_PASSWORD = "vinistyle2024";
-
-        function handleLogin(event) {
-            event.preventDefault();
-            
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const errorMessage = document.getElementById('errorMessage');
-            
-            if (email === DEMO_EMAIL && password === DEMO_PASSWORD) {
-                // Store login status
-                localStorage.setItem('isLoggedIn', 'true');
-                localStorage.setItem('userEmail', email);
-                
-                // Redirect to homepage
-                window.location.href = 'index.html';
-            } else {
-                errorMessage.textContent = 'Email hoặc mật khẩu không đúng. Demo: demo@vinistyle.com / vinistyle2024';
-                errorMessage.style.display = 'block';
-            }
-        }
-    </script>
+    <script src="./js/login.js"></script>
 
             <!-- Footer -->
     <footer class="footer">
@@ -153,6 +131,16 @@
             </div>
         </div>
     </footer>
+
+    <!-- Success Popup -->
+    <div class="popup-overlay" id="successPopup">
+        <div class="success-popup">
+            <div class="success-icon"></div>
+            <h2>Đăng nhập thành công!</h2>
+            <p>Chào mừng bạn trở lại ViniStyle</p>
+            <p class="redirect-text">Đang chuyển hướng về trang chủ...</p>
+        </div>
+    </div>
 
     <script src="./js/menu.js"></script>
     <script src="./js/search.js"></script>
