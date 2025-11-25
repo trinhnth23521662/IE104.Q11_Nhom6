@@ -15,6 +15,15 @@
                 document.getElementById('userEmail').textContent = userEmail;
                 document.getElementById('displayEmail').textContent = userEmail;
             }
+
+        // Nếu đăng nhập thành công, hiển thị popup
+            const popup = document.getElementById('successPopup');
+            popup.classList.add('show');
+
+        // Sau đó chuyển hướng về trang chủ
+            setTimeout(() => {
+                window.location.href = 'profile.html';
+            }, 2000);
         });
 
         // Hàm đăng xuất
