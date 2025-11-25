@@ -158,6 +158,161 @@ body {
     color: #67645E;
 }
 
+/* PHẦN DROPDOWN MENU CHO USER AVATAR */
+.user-avatar {
+    position: relative;
+}
+
+.user-avatar img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.user-avatar img:hover {
+    transform: scale(1.1);
+}
+
+/* Dropdown menu ẩn */
+.dropdown-menu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.user-avatar:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Các item trong dropdown */
+.dropdown-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #67645E;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+/* Bo góc trên cho item đầu tiên */
+.dropdown-menu a:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+/* Bo góc dưới cho item cuối cùng */
+.dropdown-menu a:last-child {
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #eee;
+}
+
+.dropdown-menu a:hover {
+    background: #f5f5f5;
+    color: #391C1C;
+}
+
+/* PHẦN POPUP THÔNG BÁO THÀNH CÔNG */
+/* Overlay nền tối phía sau popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-overlay.show {
+    display: flex;
+}
+
+/* Hiệu ứng mờ dần vào */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Popup thông báo thành công */
+.success-popup {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    animation: scaleIn 0.5s ease 0.2s both;
+}
+
+/* Hiệu ứng phóng to icon */
+@keyframes scaleIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.success-icon::after {
+    content: '✓';
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.success-popup h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.success-popup p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.redirect-text {
+    color: #999;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
 
