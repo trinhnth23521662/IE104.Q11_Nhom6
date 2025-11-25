@@ -1,29 +1,25 @@
-// Xử lý đăng nhập
-document.addEventListener('DOMContentLoaded', function() {
-    const loginForm = document.getElementById('loginForm');
-    
-    loginForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        
-        // Kiểm tra thông tin đăng nhập
-        if (email && password) {
-            // Lưu thông tin đăng nhập
-            localStorage.setItem('isLoggedIn', 'true');
-            localStorage.setItem('userEmail', email);
-            
-            // Hiển thị popup thành công
-            const popup = document.getElementById('successPopup');
-            popup.classList.add('show');
-            
-            // Chuyển hướng sau 2 giây
-            setTimeout(function() {
-                window.location.href = 'profile.html';
-            }, 2000);
-        } else {
-            alert('Vui lòng nhập đầy đủ thông tin!');
-        }
-    });
-});
+window.handleLogin = function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    // Lấy dữ liệu người dùng từ localStorage
+    const users = JSON.parse(localStorage.getItem("users")) || {};
+
+    if (!users[email]) {
+        alert("Email chưa được đăng ký!");
+        return;
+    }
+
+    if (users[email] !== password) {
+        alert("Mật khẩu không đúng!");
+        return;
+    }
+
+    // Lưu trạng thái đăng nhập
+    localStorage.setItem("loginSuccess", "true");
+
+    // Chuyển sang trang chính
+    window.location.href = "index.html";
+};
