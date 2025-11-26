@@ -34,6 +34,31 @@ body {
     color: #391C1C;
 }
 
+/* Nút mũi tên scroll lên đầu trang */
+.arrow-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    background: rgb(215, 214, 214);
+    color: rgb(12, 12, 12);
+    border-radius: 50%;
+    display: none; /* Ẩn mặc định */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background: #391C1C;
+    color: white;
+    transform: scale(1.1);
+}
+
 /* Hero Section with Floating Background */
 .hero-section {
     min-height: 500px;
