@@ -59,3 +59,18 @@ function updateProfileFollowingCount() {
     console.log(`Đang theo dõi: ${totalFollowing} brands`);
     console.log('Brands đã theo dõi:', followedBrands);
 }
+
+// Handle logout functionality
+function handleLogout() {
+    if (confirm('Bạn có chắc chắn muốn đăng xuất?')) {
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('userEmail');
+        window.location.href = 'login.html';
+    }
+}
+
+// Handle edit profile (placeholder function)
+function handleEditProfile(event) {
+    event.preventDefault();
+    alert('Tính năng chỉnh sửa đang phát triển!');
+}
