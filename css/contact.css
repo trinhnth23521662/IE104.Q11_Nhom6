@@ -240,6 +240,103 @@ body {
     text-decoration: underline;
 }
 
+/* Success Popup cho Contact Form */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-overlay.show {
+    display: flex; /* Hiện popup khi có class show */
+}
+
+/* Hiệu ứng mờ dần */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Khung popup chính */
+.success-popup {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.4s ease; /* Hiệu ứng trượt lên */
+}
+
+/* Hiệu ứng trượt lên */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Biểu tượng tích xanh */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    animation: scaleIn 0.5s ease 0.2s both; /* Hiệu ứng phóng to */
+}
+
+/* Hiệu ứng phóng to */
+@keyframes scaleIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.success-icon::after {
+    content: '✓';
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Tiêu đề popup */
+.success-popup h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Nội dung popup */
+.success-popup p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Text chuyển hướng */
+.redirect-text {
+    color: #999;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
 /* Footer */
 .footer {
     background: #F1F0EC;
