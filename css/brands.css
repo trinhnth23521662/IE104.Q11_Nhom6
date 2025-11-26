@@ -437,6 +437,16 @@ body {
     gap: 8px;
 }
 
+/* Khi chỉ có 2 nút (chưa đăng nhập) */
+.brand-actions.two-buttons {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Ẩn nút theo dõi */
+.btn-follow.follow-btn.hidden {
+    display: none;
+}
+
 /* Nút theo dõi */
 .btn-follow.follow-btn {
     background: #391C1C;
