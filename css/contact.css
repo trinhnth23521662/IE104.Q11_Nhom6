@@ -425,28 +425,28 @@ body {
     display: inline-block;
 }
 
-.account-signin {
-    background: transparent;
-    color: #FFFFFF;
-    border: 2px solid rgba(255, 255, 255, 0.8);
-}
-
-.account-signin:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: #FFFFFF;
-    transform: translateY(-2px);
-}
-
-.account-signup {
+.account-brands {
     background: #FFFFFF;
     color: #391C1C;
     border: 2px solid #FFFFFF;
 }
 
-.account-signup:hover {
+.account-brands:hover {
     background: #F1F0EC;
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+.account-collection {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.account-collection:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #FFFFFF;
+    transform: translateY(-2px);
 }
 
 /* Responsive Design */
