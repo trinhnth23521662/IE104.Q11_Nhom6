@@ -1,5 +1,14 @@
 // Xử lý theo dõi brands
 document.addEventListener('DOMContentLoaded', function() {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    
+    if (!isLoggedIn) {
+        // Ẩn nút theo dõi nếu chưa đăng nhập
+        hideFollowButtons();
+        return;
+    }
+    
+    // Nếu đã đăng nhập, hiển thị nút theo dõi
     const followButtons = document.querySelectorAll('.follow-btn');
     
     // Load trạng thái theo dõi từ localStorage
@@ -13,6 +22,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Ẩn nút theo dõi nếu chưa đăng nhập
+function hideFollowButtons() {
+    const followButtons = document.querySelectorAll('.follow-btn');
+    followButtons.forEach(button => {
+        button.style.display = 'none';
+    });
+    
+    // Điều chỉnh grid cho 2 nút còn lại
+    const brandActions = document.querySelectorAll('.brand-actions');
+    brandActions.forEach(actions => {
+        actions.style.gridTemplateColumns = '1fr 1fr';
+    });
+}
 
 // Hàm bật/tắt theo dõi brand
 function toggleFollowBrand(brandName, button) {
