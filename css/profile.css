@@ -121,6 +121,7 @@ body {
     color: #391C1C;
     margin-bottom: 20px;
     font-weight: 600;
+    border-bottom: none;
 }
 
 .followed-brands-list {
