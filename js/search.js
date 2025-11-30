@@ -2,29 +2,13 @@
     link.rel = "stylesheet";
     link.href = "./css/search.css";
     document.head.appendChild(link);
-    // Dữ liệu mẫu cho search suggestions
-    const searchData = [
-        { title: "Levents", category: "Thương hiệu", icon: "ᥫ᭡", link: "levents.html" },
-        { title: "Dirty Coins", category: "Thương hiệu", icon: "ᥫ᭡", link: "dirtycoins.html" },
-        { title: "Teelab", category: "Thương hiệu", icon: "ᥫ᭡", link: "#" },
-        { title: "Hoodie", category: "Sản phẩm", icon: "𝜗ৎ", link: "#" },
-        { title: "T-shirt", category: "Sản phẩm", icon: "𝜗ৎ", link: "#" },
-        { title: "Streetwear", category: "Phong cách", icon: "♛", link: "brands.html" },
-        { title: "Minimalist", category: "Phong cách", icon: "♛", link: "brands.html" },
-        { title: "Vintage", category: "Phong cách", icon: "♛", link: "brands.html" },
-        { title: "Áo thun", category: "Sản phẩm", icon: "𝜗ৎ", link: "#" },
-        { title: "Túi Tote", category: "Sản phẩm", icon: "𝜗ৎ", link: "#" },
-        { title: "Local Brand", category: "Danh mục", icon: "✶", link: "brands.html" },
-        { title: "About", category: "Danh mục", icon: "✶", link: "about.html" },
-        { title: "Thời trang thu đông", category: "Khám phá", icon: "𓏵", link: "khampha.html" },
-        { title: "Retro cổ điển", category: "Khám phá", icon: "𓏵", link: "khampha.html" },
-        { title: "Thời trang nam", category: "Khám phá", icon: "𓏵", link: "khampha.html" },
-        { title: "Phụ kiện hot", category: "Khám phá", icon: "𓏵", link: "khampha.html" },
-        { title: "Tư vấn phối đồ", category: "Bộ sưu tập", icon: "❀", link: "collection.html" },
-        { title: "Style đi học", category: "Bộ sưu tập", icon: "❀", link: "collection.html" },
-        { title: "Mẹo phối đồ nhanh", category: "Bộ sưu tập", icon: "❀", link: "collection.html" },
 
-    ];
+    let searchData = [];
+
+    fetch("./data/searchData.json")
+      .then((res) => res.json())
+      .then((data) => (searchData = data))
+      .catch((err) => console.error("Lỗi tải searchData:", err));
 
     document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.querySelector('.search-bar input');
@@ -92,6 +76,3 @@
             }
         });
     });
-
-    
-
