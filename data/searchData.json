@@ -1,0 +1,26 @@
+[
+    { "title": "Levents", "category": "Thương hiệu", "icon": "ᥫ᭡", "link": "levents.html" },
+    { "title": "Dirty Coins", "category": "Thương hiệu", "icon": "ᥫ᭡", "link": "dirtycoins.html" },
+    { "title": "Teelab", "category": "Thương hiệu", "icon": "ᥫ᭡", "link": "404page.html" },
+
+    { "title": "Hoodie", "category": "Sản phẩm", "icon": "𝜗ৎ", "link": "404page.html" },
+    { "title": "T-shirt", "category": "Sản phẩm", "icon": "𝜗ৎ", "link": "404page.html" },
+    { "title": "Áo thun", "category": "Sản phẩm", "icon": "𝜗ৎ", "link": "404page.html" },
+    { "title": "Túi Tote", "category": "Sản phẩm", "icon": "𝜗ৎ", "link": "404page.html" },
+
+    { "title": "Streetwear", "category": "Phong cách", "icon": "♛", "link": "404page.html" },
+    { "title": "Minimalist", "category": "Phong cách", "icon": "♛", "link": "404page.html" },
+    { "title": "Vintage", "category": "Phong cách", "icon": "♛", "link": "vintage.html" },
+
+    { "title": "Local Brand", "category": "Danh mục", "icon": "✶", "link": "brands.html" },
+    { "title": "About", "category": "Danh mục", "icon": "✶", "link": "about.html" },
+
+    { "title": "Thời trang thu đông", "category": "Khám phá", "icon": "𓏵", "link": "khampha.html" },
+    { "title": "Retro cổ điển", "category": "Khám phá", "icon": "𓏵", "link": "khampha.html" },
+    { "title": "Thời trang nam", "category": "Khám phá", "icon": "𓏵", "link": "khampha.html" },
+    { "title": "Phụ kiện hot", "category": "Khám phá", "icon": "𓏵", "link": "khampha.html" },
+
+    { "title": "Tư vấn phối đồ", "category": "Bộ sưu tập", "icon": "❀", "link": "collection.html" },
+    { "title": "Style đi học", "category": "Bộ sưu tập", "icon": "❀", "link": "collection.html" },
+    { "title": "Mẹo phối đồ nhanh", "category": "Bộ sưu tập", "icon": "❀", "link": "collection.html" }
+]
