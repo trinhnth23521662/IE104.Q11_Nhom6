@@ -15,10 +15,10 @@
     { "title": "Local Brand", "category": "Danh mục", "icon": "✶", "link": "brands.html" },
     { "title": "About", "category": "Danh mục", "icon": "✶", "link": "about.html" },
 
-    { "title": "Thời trang thu đông", "category": "Khám phá", "icon": "𓏵", "link": "khampha.html" },
-    { "title": "Retro cổ điển", "category": "Khám phá", "icon": "𓏵", "link": "khampha.html" },
-    { "title": "Thời trang nam", "category": "Khám phá", "icon": "𓏵", "link": "khampha.html" },
-    { "title": "Phụ kiện hot", "category": "Khám phá", "icon": "𓏵", "link": "khampha.html" },
+    { "title": "Thời trang thu đông", "category": "Khám phá", "icon": "𓏵", "link": "explore.html" },
+    { "title": "Retro cổ điển", "category": "Khám phá", "icon": "𓏵", "link": "explore.html" },
+    { "title": "Thời trang nam", "category": "Khám phá", "icon": "𓏵", "link": "explore.html" },
+    { "title": "Phụ kiện hot", "category": "Khám phá", "icon": "𓏵", "link": "explore.html" },
 
     { "title": "Tư vấn phối đồ", "category": "Bộ sưu tập", "icon": "❀", "link": "collection.html" },
     { "title": "Style đi học", "category": "Bộ sưu tập", "icon": "❀", "link": "collection.html" },
